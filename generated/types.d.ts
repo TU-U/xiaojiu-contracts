@@ -9,13 +9,13 @@ export interface paths {
         };
         /**
          * GET /research-search-settings
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getResearchSearchSettings"];
         put?: never;
         /**
          * POST /research-search-settings
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postResearchSearchSettings"];
         delete?: never;
@@ -35,7 +35,7 @@ export interface paths {
         put?: never;
         /**
          * POST /research-tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postResearchTasks"];
         delete?: never;
@@ -53,7 +53,7 @@ export interface paths {
         };
         /**
          * GET /research-tasks/{id}/external/{sourceId}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getResearchTasksByIdExternalBySourceId"];
         put?: never;
@@ -73,7 +73,7 @@ export interface paths {
         };
         /**
          * GET /research-tasks/{id}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getResearchTasksById"];
         put?: never;
@@ -95,7 +95,7 @@ export interface paths {
         put?: never;
         /**
          * POST /research-tasks/{id}/action
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postResearchTasksByIdAction"];
         delete?: never;
@@ -113,7 +113,7 @@ export interface paths {
         };
         /**
          * GET /research-sources
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getResearchSources"];
         put?: never;
@@ -153,7 +153,7 @@ export interface paths {
         };
         /**
          * GET /threads
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getThreads"];
         put?: never;
@@ -173,7 +173,7 @@ export interface paths {
         };
         /**
          * GET /threads/{id}/turns
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getThreadsByIdTurns"];
         put?: never;
@@ -193,7 +193,7 @@ export interface paths {
         };
         /**
          * GET /settings/storage
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getSettingsStorage"];
         put?: never;
@@ -273,7 +273,7 @@ export interface paths {
         };
         /**
          * GET /settings/capabilities
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getSettingsCapabilities"];
         put?: never;
@@ -295,7 +295,7 @@ export interface paths {
         put?: never;
         /**
          * POST /settings/capabilities/{id}/test
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postSettingsCapabilitiesByIdTest"];
         delete?: never;
@@ -357,7 +357,7 @@ export interface paths {
         };
         /**
          * GET /accounting/imports/{id}/classifications
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingImportsByIdClassifications"];
         put?: never;
@@ -379,7 +379,7 @@ export interface paths {
         put?: never;
         /**
          * POST /accounting/imports/{id}/classify
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingImportsByIdClassify"];
         delete?: never;
@@ -399,7 +399,7 @@ export interface paths {
         put?: never;
         /**
          * POST /accounting/imports/{id}/review
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingImportsByIdReview"];
         delete?: never;
@@ -419,7 +419,7 @@ export interface paths {
         put?: never;
         /**
          * POST /accounting/imports/{id}/commit
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingImportsByIdCommit"];
         delete?: never;
@@ -437,7 +437,7 @@ export interface paths {
         };
         /**
          * GET /accounting/imports/{id}/reviews
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingImportsByIdReviews"];
         put?: never;
@@ -457,13 +457,13 @@ export interface paths {
         };
         /**
          * GET /accounting/imports
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingImports"];
         put?: never;
         /**
          * POST /accounting/imports
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingImports"];
         delete?: never;
@@ -481,7 +481,7 @@ export interface paths {
         };
         /**
          * GET /accounting/imports/{id}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingImportsById"];
         put?: never;
@@ -503,7 +503,7 @@ export interface paths {
         put?: never;
         /**
          * POST /accounting/imports/{id}/reparse
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingImportsByIdReparse"];
         delete?: never;
@@ -547,7 +547,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /accounting/budget
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchAccountingBudget"];
         trace?: never;
@@ -561,7 +561,7 @@ export interface paths {
         };
         /**
          * GET /accounting/checks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingChecks"];
         put?: never;
@@ -583,7 +583,7 @@ export interface paths {
         put?: never;
         /**
          * POST /accounting/checks/confirm
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postAccountingChecksConfirm"];
         delete?: never;
@@ -601,7 +601,7 @@ export interface paths {
         };
         /**
          * GET /accounting/view
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAccountingView"];
         put?: never;
@@ -621,7 +621,7 @@ export interface paths {
         };
         /**
          * GET /event-references
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getEventReferences"];
         put?: never;
@@ -661,13 +661,13 @@ export interface paths {
         };
         /**
          * GET /library/{id}/tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibraryByIdTasks"];
         put?: never;
         /**
          * POST /library/{id}/tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryByIdTasks"];
         delete?: never;
@@ -685,7 +685,7 @@ export interface paths {
         };
         /**
          * GET /work-tasks/{id}/library
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkTasksByIdLibrary"];
         put?: never;
@@ -708,7 +708,7 @@ export interface paths {
         post?: never;
         /**
          * DELETE /work-tasks/{id}/library/{sourceId}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         delete: operations["deleteWorkTasksByIdLibraryBySourceId"];
         options?: never;
@@ -725,7 +725,7 @@ export interface paths {
         };
         /**
          * GET /library
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibrary"];
         put?: never;
@@ -745,7 +745,7 @@ export interface paths {
         };
         /**
          * GET /library/files
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibraryFiles"];
         put?: never;
@@ -767,7 +767,7 @@ export interface paths {
         put?: never;
         /**
          * POST /library/scan
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryScan"];
         delete?: never;
@@ -787,7 +787,7 @@ export interface paths {
         put?: never;
         /**
          * POST /library/control
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryControl"];
         delete?: never;
@@ -807,7 +807,7 @@ export interface paths {
         put?: never;
         /**
          * POST /library/decisions
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryDecisions"];
         delete?: never;
@@ -827,7 +827,7 @@ export interface paths {
         put?: never;
         /**
          * POST /library/{id}/decision
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryByIdDecision"];
         delete?: never;
@@ -845,7 +845,7 @@ export interface paths {
         };
         /**
          * GET /library/search
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibrarySearch"];
         put?: never;
@@ -871,7 +871,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /library/{id}/metadata
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchLibraryByIdMetadata"];
         trace?: never;
@@ -885,13 +885,13 @@ export interface paths {
         };
         /**
          * GET /library/{id}/index
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibraryByIdIndex"];
         put?: never;
         /**
          * POST /library/{id}/index
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryByIdIndex"];
         delete?: never;
@@ -909,7 +909,7 @@ export interface paths {
         };
         /**
          * GET /library/{id}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getLibraryById"];
         put?: never;
@@ -931,7 +931,7 @@ export interface paths {
         put?: never;
         /**
          * POST /library/{id}/analyze
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postLibraryByIdAnalyze"];
         delete?: never;
@@ -1015,7 +1015,7 @@ export interface paths {
         put?: never;
         /**
          * POST /notes/categories
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire shape; state-dependent checks remain in the business handler.
          */
         post: operations["postNotesCategories"];
         delete?: never;
@@ -1033,7 +1033,7 @@ export interface paths {
         };
         /**
          * GET /classification-corrections
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getClassificationCorrections"];
         put?: never;
@@ -1059,7 +1059,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /classification-corrections/{id}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchClassificationCorrectionsById"];
         trace?: never;
@@ -1119,7 +1119,7 @@ export interface paths {
         put?: never;
         /**
          * POST /projects/{id}/links
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postProjectsByIdLinks"];
         delete?: never;
@@ -1137,7 +1137,7 @@ export interface paths {
         };
         /**
          * GET /projects/{id}/candidates
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getProjectsByIdCandidates"];
         put?: never;
@@ -1157,7 +1157,7 @@ export interface paths {
         };
         /**
          * GET /projects/{id}/items
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getProjectsByIdItems"];
         put?: never;
@@ -1177,13 +1177,13 @@ export interface paths {
         };
         /**
          * GET /notes/{id}/classification
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getNotesByIdClassification"];
         put?: never;
         /**
          * POST /notes/{id}/classification
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postNotesByIdClassification"];
         delete?: never;
@@ -1281,7 +1281,7 @@ export interface paths {
         };
         /**
          * GET /settings/worker
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getSettingsWorker"];
         put?: never;
@@ -1383,7 +1383,7 @@ export interface paths {
         put?: never;
         /**
          * POST /todos/{id}/upgrade
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postTodosByIdUpgrade"];
         delete?: never;
@@ -1451,7 +1451,7 @@ export interface paths {
         put?: never;
         /**
          * POST /transactions
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postTransactions"];
         delete?: never;
@@ -1479,7 +1479,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /transactions/{id}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchTransactionsById"];
         trace?: never;
@@ -1706,7 +1706,7 @@ export interface paths {
         put?: never;
         /**
          * POST /events/{id}/check
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire shape; state-dependent checks remain in the business handler.
          */
         post: operations["postEventsByIdCheck"];
         delete?: never;
@@ -1724,7 +1724,7 @@ export interface paths {
         };
         /**
          * GET /events/{id}/checks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getEventsByIdChecks"];
         put?: never;
@@ -1746,7 +1746,7 @@ export interface paths {
         put?: never;
         /**
          * POST /events/{id}/schedule
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postEventsByIdSchedule"];
         delete?: never;
@@ -1766,7 +1766,7 @@ export interface paths {
         put?: never;
         /**
          * POST /events/{id}/snooze
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postEventsByIdSnooze"];
         delete?: never;
@@ -1786,7 +1786,7 @@ export interface paths {
         put?: never;
         /**
          * POST /events/{id}/end
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postEventsByIdEnd"];
         delete?: never;
@@ -1806,7 +1806,7 @@ export interface paths {
         put?: never;
         /**
          * POST /events/{id}/confirm
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postEventsByIdConfirm"];
         delete?: never;
@@ -1844,7 +1844,7 @@ export interface paths {
         };
         /**
          * GET /computer-files
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getComputerFiles"];
         put?: never;
@@ -1866,7 +1866,7 @@ export interface paths {
         put?: never;
         /**
          * POST /computer-files/import
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postComputerFilesImport"];
         delete?: never;
@@ -1966,7 +1966,7 @@ export interface paths {
         put?: never;
         /**
          * POST /search-brief
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postSearchBrief"];
         delete?: never;
@@ -1984,13 +1984,13 @@ export interface paths {
         };
         /**
          * GET /threads/{id}/context
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getThreadsByIdContext"];
         put?: never;
         /**
          * POST /threads/{id}/context
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postThreadsByIdContext"];
         delete?: never;
@@ -2058,7 +2058,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /conversations/{id}/memory-proposals/{index}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchConversationsByIdMemoryProposalsByIndex"];
         trace?: never;
@@ -2074,7 +2074,7 @@ export interface paths {
         put?: never;
         /**
          * POST /conversations/{id}/memory-review
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postConversationsByIdMemoryReview"];
         delete?: never;
@@ -2114,7 +2114,7 @@ export interface paths {
         put?: never;
         /**
          * POST /tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postTasks"];
         delete?: never;
@@ -2200,7 +2200,7 @@ export interface paths {
         };
         /**
          * GET /memories/{id}/source-review
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getMemoriesByIdSourceReview"];
         put?: never;
@@ -2270,7 +2270,7 @@ export interface paths {
         put?: never;
         /**
          * POST /settings/test
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postSettingsTest"];
         delete?: never;
@@ -2288,7 +2288,7 @@ export interface paths {
         };
         /**
          * GET /ai/logs
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getAiLogs"];
         put?: never;
@@ -2308,7 +2308,7 @@ export interface paths {
         };
         /**
          * GET /export
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire shape; state-dependent checks remain in the business handler.
          */
         get: operations["getExport"];
         put?: never;
@@ -2328,7 +2328,7 @@ export interface paths {
         };
         /**
          * GET /notes/{id}/transcript-history
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getNotesByIdTranscriptHistory"];
         put?: never;
@@ -2348,13 +2348,13 @@ export interface paths {
         };
         /**
          * GET /notes/{id}/transcription
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getNotesByIdTranscription"];
         put?: never;
         /**
          * POST /notes/{id}/transcription
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postNotesByIdTranscription"];
         delete?: never;
@@ -2378,7 +2378,7 @@ export interface paths {
         head?: never;
         /**
          * PATCH /notes/{id}/transcript
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         patch: operations["patchNotesByIdTranscript"];
         trace?: never;
@@ -2392,13 +2392,13 @@ export interface paths {
         };
         /**
          * GET /notes/{id}/processing
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getNotesByIdProcessing"];
         put?: never;
         /**
          * POST /notes/{id}/processing
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postNotesByIdProcessing"];
         delete?: never;
@@ -2416,7 +2416,7 @@ export interface paths {
         };
         /**
          * GET /pet/reminders
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getPetReminders"];
         put?: never;
@@ -2436,13 +2436,13 @@ export interface paths {
         };
         /**
          * GET /supervision/recap
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getSupervisionRecap"];
         put?: never;
         /**
          * POST /supervision/recap
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postSupervisionRecap"];
         delete?: never;
@@ -2460,13 +2460,13 @@ export interface paths {
         };
         /**
          * GET /work-tasks/settings
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkTasksSettings"];
         put?: never;
         /**
          * POST /work-tasks/settings
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postWorkTasksSettings"];
         delete?: never;
@@ -2484,7 +2484,7 @@ export interface paths {
         };
         /**
          * GET /work-runs/{id}/evidence-history
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkRunsByIdEvidenceHistory"];
         put?: never;
@@ -2504,7 +2504,7 @@ export interface paths {
         };
         /**
          * GET /work-runs/{id}/evidence-history/{checkId}
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkRunsByIdEvidenceHistoryByCheckId"];
         put?: never;
@@ -2524,7 +2524,7 @@ export interface paths {
         };
         /**
          * GET /work-runs/{id}/evidence-options
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkRunsByIdEvidenceOptions"];
         put?: never;
@@ -2544,7 +2544,7 @@ export interface paths {
         };
         /**
          * GET /work-runs/{id}/evidence-sources
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkRunsByIdEvidenceSources"];
         put?: never;
@@ -2564,13 +2564,13 @@ export interface paths {
         };
         /**
          * GET /work-tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         get: operations["getWorkTasks"];
         put?: never;
         /**
          * POST /work-tasks
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postWorkTasks"];
         delete?: never;
@@ -2610,7 +2610,7 @@ export interface paths {
         put?: never;
         /**
          * POST /work-tasks/{id}/conditions
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postWorkTasksByIdConditions"];
         delete?: never;
@@ -2630,7 +2630,7 @@ export interface paths {
         put?: never;
         /**
          * POST /work-tasks/{id}/action
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postWorkTasksByIdAction"];
         delete?: never;
@@ -2650,7 +2650,7 @@ export interface paths {
         put?: never;
         /**
          * POST /work-runs/{id}/action
-         * @description Route and transport inventoried. Detailed body/response extraction pending; existing backend validators remain authoritative.
+         * @description Shared wire contract. Normalization, authorization, state, revision, reference validity and idempotency remain business-owned.
          */
         post: operations["postWorkRunsByIdAction"];
         delete?: never;
@@ -2714,6 +2714,11 @@ export interface components {
             attachments: components["schemas"]["Attachment"][];
             sourcePath?: string;
             score?: number;
+            classification?: {
+                state: string;
+                reason?: string;
+            };
+            summaryStale?: boolean;
         };
         Source: {
             excerpts?: {
@@ -3041,6 +3046,7 @@ export interface components {
             occurredAt?: string | null;
             opId?: string;
         };
+        /** @description No trimming/coercion in the shared validator; domain checks the current source and draft. */
         EventSuggestRequest: {
             eventId?: string;
             noteId?: string;
@@ -3075,6 +3081,7 @@ export interface components {
             threadId: string;
             created?: boolean;
             reference?: components["schemas"]["ConversationReference"];
+            projectId?: string;
         };
         AskRequest: {
             query: string;
@@ -3165,10 +3172,13 @@ export interface components {
             threadId?: string;
         };
         SearchBrief: {
+            topic: string;
+            background: string[];
+            questions: string[];
             brief: string;
-            url?: string;
-            mode?: string;
-            sources?: components["schemas"]["Source"][];
+            notice: string;
+            /** @enum {string} */
+            mode: "local" | "model";
         };
         MemoryCreate: {
             opId?: string;
@@ -3256,6 +3266,1656 @@ export interface components {
             };
             accessCode?: string;
         };
+        LibraryLocation: {
+            id: string;
+            title: string;
+            revision?: number;
+            start?: number;
+            end?: number;
+            text?: string;
+        };
+        AccountingView: {
+            day: string;
+            filtered: components["schemas"]["LedgerTransaction"][];
+            filteredTotals: {
+                income: string;
+                expense: string;
+            };
+            monthTotals: {
+                income: string;
+                expense: string;
+            };
+            livingSpent: string;
+            budgetCents: string;
+            budgetRemaining: string;
+            monthlySpend: string;
+            categories: {
+                name: string;
+                i: number;
+                value: string;
+            }[];
+            chartYears: string[];
+            monthOptions: string[];
+            monthChart: {
+                month: string;
+                label: string;
+                income: string;
+                expense: string;
+            }[];
+            recentMonthChart: {
+                month: string;
+                label: string;
+                income: string;
+                expense: string;
+            }[];
+            ranking: components["schemas"]["LedgerTransaction"][];
+        };
+        AccountingCheck: {
+            day: string;
+            title: string;
+            status: string;
+        };
+        AccountingImportRow: {
+            rowId: string;
+            rowNumber: number;
+            sheetName?: string;
+            decision: string;
+            decisionReason?: string;
+            status: string;
+            reason: string;
+            issues: string[];
+            rawCells: (string | null)[];
+            values: {
+                merchant?: string;
+            };
+            draft: {
+                type: string;
+                amountCents: number | null;
+                category: string;
+                date: string;
+                note: string;
+                source: string;
+                sourceRef: string;
+            };
+            transactionId?: string | null;
+            formulas?: {
+                column: number;
+                formula: string;
+            }[];
+            duplicateCandidates?: {
+                groupId: string;
+                basis: string;
+                count: number;
+            }[];
+            reviewId?: string;
+            confirmedAt?: string;
+            reviewedDraft?: components["schemas"]["AccountingDraftInput"] | null;
+            duplicateAcknowledged?: boolean;
+        };
+        AccountingImportPage: components["schemas"]["AccountingImportSummary"] & {
+            rows: components["schemas"]["AccountingImportRow"][];
+            offset: number;
+            limit: number;
+            totalRows: number;
+            duplicateGroups: {
+                id: string;
+                rowIds?: string[];
+                basis?: string;
+            }[];
+        };
+        AccountingReviewPreview: {
+            reviewId: string;
+            revision: number;
+            reviewToken: string;
+            choices: {
+                rowId: string;
+                decision: string;
+                reason?: string;
+                draft?: {
+                    date: string;
+                    category: string;
+                    amountCents: number;
+                    note: string;
+                };
+            }[];
+            duplicates: {
+                rowId: string;
+                matches: {
+                    kind: string;
+                    id: string;
+                    rowNumber?: number;
+                    sheetName?: string;
+                    date?: string;
+                    amountCents?: number;
+                    note?: string;
+                    basis: string[];
+                }[];
+            }[];
+        };
+        AccountingClassification: {
+            id: string;
+            batchId: string;
+            batchRevision: number;
+            status: string;
+            notice: string;
+            inputs: {
+                rowId: string;
+                type: string;
+                note: string;
+            }[];
+            suggestions: {
+                rowId: string;
+                type: string;
+                note: string;
+                category: string;
+            }[];
+        };
+        AiLogEvent: {
+            at: string;
+            stage?: string;
+            kind?: string;
+            callId?: string;
+            model?: string;
+            error?: string;
+            finishReason?: string;
+        } & {
+            [key: string]: unknown;
+        };
+        Capability: {
+            id: string;
+            label: string;
+            configured: boolean;
+            source: string;
+            notice: string;
+            config: {
+                baseUrl: string;
+                model: string;
+                hasKey: boolean;
+                host?: string;
+                port?: number;
+            };
+            test: components["schemas"]["CapabilityTest"] | null;
+            configRevision?: string;
+        };
+        ClassificationCorrection: {
+            id: string;
+            revision: number;
+            sourceTitle: string;
+            sourceRevision: number;
+            oldCategoryName: string | null;
+            newCategoryName: string;
+            classifierRevision: number;
+            model: string | null;
+            promptVersion: string | null;
+            reason: string;
+            status: "open" | "resolved";
+            resolution?: string;
+            createdAt: string;
+            history?: {
+                status: string;
+                resolution: string;
+                at: string;
+            }[];
+        };
+        ClassifiedNote: components["schemas"]["Note"];
+        ClassificationState: {
+            note: components["schemas"]["ClassifiedNote"];
+            job: {
+                state: string;
+                error: string | null;
+                sourceRevision: number;
+            } | null;
+        };
+        ComputerFileItem: {
+            name: string;
+            path: string;
+            kind: "directory" | "file";
+        };
+        ComputerFileListing: {
+            root: string;
+            path: string;
+            items: components["schemas"]["ComputerFileItem"][];
+            truncated: boolean;
+        };
+        EventReview: {
+            reviewedAt?: string | null;
+            reviewText?: string;
+            reviewNotice?: string;
+            reviewSnapshot?: ({
+                sources: {
+                    kind: string;
+                    id: string;
+                    revision: number | null;
+                    title: string;
+                    missing: boolean;
+                    issue?: string;
+                }[];
+                createdAt: string;
+            } | null) | null;
+        };
+        EventCheck: {
+            reviewedAt?: string | null;
+            reviewText?: string;
+            reviewNotice?: string;
+            reviewSnapshot?: ({
+                sources: {
+                    kind: string;
+                    id: string;
+                    revision: number | null;
+                    title: string;
+                    missing: boolean;
+                    issue?: string;
+                }[];
+                createdAt: string;
+            } | null) | null;
+            id: string;
+            dueAt: string;
+            status: string;
+            confirmedAt?: string | null;
+            cancelledAt?: string;
+            cancelReason?: string;
+            history: (components["schemas"]["EventReview"] & {
+                action: string;
+                at?: string;
+                dueAt: string;
+            })[];
+        };
+        LibraryStatus: {
+            index: {
+                status: string;
+                error?: string;
+                pending?: number;
+                title?: string;
+                chunk?: number;
+                total?: number;
+            };
+            job: {
+                status: string;
+                error?: string;
+                path?: string;
+                queue?: string[];
+                startedAt?: string;
+                finishedAt?: string;
+                resumeStatus?: string;
+            };
+            counts: {
+                [key: string]: number;
+            };
+            files: components["schemas"]["LibraryFile"][];
+        };
+        LibraryIndexState: {
+            state: string;
+            sourceRevision: number;
+            indexedRevision?: number;
+            completedChunks?: number;
+            retryable: boolean;
+            message: string;
+        };
+        LibraryTaskCandidate: {
+            id: string;
+            revision: number;
+            title: string;
+            status: string;
+        };
+        LibraryTaskPage: {
+            items: components["schemas"]["LibraryTaskCandidate"][];
+            nextCursor: string | null;
+            total: number;
+        };
+        PetReminder: {
+            id: string;
+            sourceKind: string;
+            sourceId: string;
+            sourceRevision: number;
+            occurrenceKey: string;
+            title: string;
+            message: string;
+            count: number;
+            dueAt: string | null;
+            actionTarget: {
+                page: string;
+                id: string;
+                threadId?: string;
+                runId?: string;
+                history?: boolean;
+                day?: string;
+                occurrenceId?: string;
+            };
+        };
+        PetFeedback: {
+            id: string;
+            kind: "completed" | "concern";
+            at: string;
+            message: string;
+            taskId: string;
+            runId: string;
+        };
+        PetReminderSnapshot: {
+            feedback?: components["schemas"]["PetFeedback"][];
+            snapshot: string;
+            cursor: number;
+            total: number;
+            items: components["schemas"]["PetReminder"][];
+        };
+        ProcessingState: {
+            note: components["schemas"]["Note"];
+            job: {
+                id: string;
+                state: string;
+                attempts: number;
+                error: string | null;
+                sourceRevision: number;
+            } | null;
+        };
+        ResearchCandidateDecision: {
+            targetId: string;
+            targetKind: "event" | "workTask";
+            title: string;
+            available?: boolean;
+        };
+        ResearchActionCandidate: {
+            title: string;
+            description: string;
+            kind: string;
+        };
+        ResearchSearchPricing: {
+            revision: number;
+            enabled: boolean;
+            maxCostMicros?: number;
+            reviewUntil?: string;
+            usable: boolean;
+            notice: string;
+        };
+        ResearchReference: {
+            id: string;
+            kind: "note" | "event" | "libraryFile";
+            revision: number;
+            title: string;
+        };
+        ResearchBrief: {
+            topic: string;
+            background: string;
+            questions: string[];
+            constraints: string;
+            type: "learning" | "comparison" | "feasibility" | "custom";
+            asOf: string;
+            expectedOutput: string;
+            web: boolean;
+        };
+        ResearchPlan: {
+            version: number;
+            goal: string;
+            conditions: string;
+            steps: string[];
+            known: string[];
+            unknown: string[];
+            deliverable: string;
+        };
+        ResearchEvidence: {
+            id: string;
+            kind?: string;
+            url?: string;
+            retrievedAt?: string;
+            evidenceId: string;
+            title: string;
+            revision: number;
+            quote: string;
+            start: number;
+            end: number;
+            total: number;
+            truncated: boolean;
+            evidenceType?: string;
+            providedAt?: string;
+            urls?: string[];
+        };
+        ResearchDetail: {
+            reportAcknowledgement?: {
+                artifactId: string;
+                artifactRevision: number;
+                at: string;
+            };
+            id: string;
+            revision: number;
+            candidateDecisions?: {
+                [key: string]: components["schemas"]["ResearchCandidateDecision"];
+            };
+            title: string;
+            status: string;
+            notice?: string;
+            researchApproval?: {
+                planVersion: number;
+            };
+            handoff?: {
+                id: string;
+                text: string;
+                state: string;
+            };
+            externalMaterials?: {
+                id: string;
+                revision: number;
+                title: string;
+                providedAt: string | null;
+                available: boolean;
+            }[];
+            handoffBrief: string;
+            researchBrief: components["schemas"]["ResearchBrief"];
+            plan: components["schemas"]["ResearchPlan"] | null;
+            planHash: string | null;
+            references: components["schemas"]["ResearchReference"][];
+            job: {
+                id: string;
+                state: string;
+                attempts: number;
+                error: string | null;
+            } | null;
+            budget: {
+                spentTimeMs: number;
+                reservedTimeMs: number;
+                chargedMicros: number;
+                reservedMicros: number;
+                uncertainMicros: number;
+            };
+            artifacts: {
+                id: string;
+                revision: number;
+                researchReportVersion?: number;
+                body: string;
+                mode: string;
+                sources: components["schemas"]["ResearchEvidence"][];
+                actionCandidates: {
+                    title: string;
+                    description: string;
+                    kind: string;
+                }[];
+            }[];
+        };
+        EvidenceHistoryEntry: {
+            id: string;
+            state: string;
+            finishedAt: string | null;
+            inputEvidenceRevision: number;
+            status?: string;
+            error: string;
+            notice: string;
+        };
+        EvidenceHistoryPage: {
+            items: components["schemas"]["EvidenceHistoryEntry"][];
+            nextBefore: number | null;
+        };
+        EvidenceHistoryDetail: {
+            id: string;
+            state: string;
+            finishedAt: string | null;
+            inputEvidenceRevision: number;
+            status?: string;
+            error?: string;
+            notice?: string;
+            evidence: string;
+            requirements?: {
+                minimumSeconds: number;
+                conditions: {
+                    id: string;
+                    description: string;
+                }[];
+            } | null;
+            sources: {
+                id: string;
+                title?: string;
+                revision?: number;
+                content: string;
+                sourceState?: string;
+            }[];
+            assessment?: {
+                reason: string;
+                results?: {
+                    conditionId: string;
+                    status: string;
+                    reason: string;
+                    evidence: {
+                        sourceId: string;
+                        quote: string;
+                        start: number;
+                        end: number;
+                    }[];
+                }[];
+            };
+        };
+        EvidenceReference: {
+            kind: "note" | "libraryFile" | "artifact";
+            id: string;
+            revision: number;
+        };
+        EvidenceSourceItem: {
+            kind: "note" | "libraryFile" | "artifact";
+            id: string;
+            revision: number;
+            title: string;
+            preview?: string;
+            truncated?: boolean;
+            invalid?: string;
+            currentRevision?: number;
+        };
+        TimingRecord: {
+            timerSessions?: {
+                id: string;
+                startedAt: string;
+                endedAt?: string;
+                seconds: number;
+                endReason?: string;
+                basis?: string;
+            }[];
+            manualAdjustments?: {
+                id: string;
+                minutes: number;
+                reason: string;
+                at: string;
+                startedAt?: string;
+                endedAt?: string;
+                basis?: string;
+            }[];
+            adjustments?: {
+                minutes: number;
+                reason: string;
+                at: string;
+                startedAt?: string;
+                endedAt?: string;
+            }[];
+        };
+        StorageStatus: {
+            checkedAt: string;
+            dataDir: string;
+            items: {
+                name: string;
+                label: string;
+                description: string;
+                path: string;
+                state: string;
+            }[];
+            disk: {
+                available: boolean;
+                totalBytes?: string;
+                freeBytes?: string;
+                notice?: string;
+            };
+            indexNotice: string;
+            diskNotice: string;
+        };
+        CompletionCondition: {
+            id: string;
+            /** @constant */
+            kind: "evidence";
+            /** @constant */
+            required: true;
+            description: string;
+        };
+        ConditionTask: {
+            id: string;
+            planVersion?: number;
+            minutes: number;
+            requirement: string;
+            completionConditions?: components["schemas"]["CompletionCondition"][];
+            repeat: string;
+        };
+        SupervisionRecapEntry: {
+            id: string;
+            title: string;
+            status: string;
+            seconds: number;
+            timing: boolean;
+            minimumSeconds: number | null;
+            conditions: {
+                id: string;
+                description: string;
+            }[];
+            evidence: string;
+            skipReason: string;
+            scheduledDueAt: string | null;
+            snoozedUntil: string | null;
+            references: {
+                id?: string;
+                title: string;
+                revision?: number;
+                invalid: boolean;
+                invalidReason?: string | null;
+                content: string;
+            }[];
+        };
+        SupervisionRecapSnapshot: {
+            day: string;
+            signature: string;
+            items: components["schemas"]["SupervisionRecapEntry"][];
+            totals: {
+                planned: number;
+                completed: number;
+                skipped: number;
+                pending: number;
+                seconds: number;
+                minimumSeconds: number;
+                unknownRequirements: number;
+            };
+            recap: components["schemas"]["SupervisionRecap"] | null;
+        };
+        TaskLibraryReference: components["schemas"]["LibraryLocation"] & {
+            available: boolean;
+            issue: string;
+            sourcePath: string;
+        };
+        TodoUpgradeRequest: {
+            opId: string;
+            revision: number;
+            minutes: number;
+            repeat: "once" | "daily";
+            startTime: string;
+            time: string;
+            conditions: {
+                id: string;
+                /** @constant */
+                kind: "evidence";
+                /** @constant */
+                required: true;
+                description: string;
+            }[];
+        };
+        AudioNote: components["schemas"]["Note"];
+        TranscriptionState: {
+            note: components["schemas"]["AudioNote"];
+            capability: {
+                available: boolean;
+                diarizationAvailable: boolean;
+                model: string;
+            };
+            job: {
+                id: string;
+                state: string;
+                error: string | null;
+                progress: {
+                    stage: string;
+                    processedMs?: number;
+                    durationMs?: number;
+                } | null;
+            } | null;
+        };
+        WorkTask: {
+            id: string;
+            planVersion?: number;
+            minutes: number;
+            requirement: string;
+            completionConditions?: components["schemas"]["CompletionCondition"][];
+            repeat: string;
+            sourceContext?: {
+                sources: (components["schemas"]["ConversationReference"] & {
+                    quote: string;
+                })[];
+                summary: string;
+                history: {
+                    id: string;
+                    query: string;
+                    answer: string;
+                }[];
+                notice: string;
+            };
+            sourceResearch?: {
+                taskId: string;
+                artifactId: string;
+            };
+            sourceTodoId?: string;
+            sourceTodoDay?: string;
+            /** @enum {string} */
+            executionMode?: "supervision";
+            revision: number;
+            title: string;
+            goal?: string;
+            status: string;
+            supervisionStatus?: string;
+            notice?: string;
+            time?: string;
+            plan: {
+                goal: string;
+                conditions: string;
+                steps: string[];
+                deliverable: string;
+            };
+            logs: {
+                at: string;
+                type: string;
+                content: string;
+            }[];
+            outputs: string[];
+        };
+        WorkRun: {
+            timerSessions?: {
+                id: string;
+                startedAt: string;
+                endedAt?: string;
+                seconds: number;
+                endReason?: string;
+                basis?: string;
+            }[];
+            manualAdjustments?: {
+                id: string;
+                minutes: number;
+                reason: string;
+                at: string;
+                startedAt?: string;
+                endedAt?: string;
+                basis?: string;
+            }[];
+            adjustments?: {
+                minutes: number;
+                reason: string;
+                at: string;
+                startedAt?: string;
+                endedAt?: string;
+            }[];
+            reminderJob?: {
+                id: string;
+                state: string;
+                dueAt: string;
+                attempts: number;
+                error: string;
+                overdue: boolean;
+            } | null;
+            conditionsSnapshot?: {
+                minimumSeconds: number;
+                conditions: {
+                    id: string;
+                    description: string;
+                }[];
+            } | null;
+            snapshotNotice?: string;
+            scheduledStartAt?: string;
+            scheduledDueAt?: string;
+            id: string;
+            taskId: string;
+            day: string;
+            status: string;
+            seconds: number;
+            timerAt: string | null;
+            notice?: string;
+            reminded?: boolean;
+            snoozedUntil?: string | null;
+            evidence: string;
+            assessment?: {
+                id?: string;
+                version?: number;
+                status: string;
+                reason: string;
+                results?: {
+                    conditionId: string;
+                    status: string;
+                    reason: string;
+                    evidence: {
+                        sourceId: string;
+                        sourceTitle?: string;
+                        quote: string;
+                        start: number;
+                        end: number;
+                    }[];
+                }[];
+            };
+            artifactId: string;
+            scheduleVersion?: number;
+            scheduleHistory?: {
+                action: string;
+                at: string;
+                from?: string;
+                to?: string;
+                reason?: string;
+            }[];
+            evidenceRefs?: components["schemas"]["EvidenceReference"][];
+            evidenceRevision?: number;
+        };
+        WorkTaskList: {
+            tasks: (components["schemas"]["WorkTask"] | components["schemas"]["ResearchTask"])[];
+            runs: components["schemas"]["WorkRun"][];
+        };
+        WorkerStatus: {
+            state: string;
+            checkedAt: string;
+            heartbeatAt: string | null;
+            lastExitAt: string | null;
+            pid: number | null;
+            queueReady: boolean;
+            counts: {
+                [key: string]: number;
+            };
+        };
+        LibraryFile: {
+            id: string;
+            revision: number;
+            title: string;
+            sourcePath: string;
+            status: string;
+            tags?: string[];
+            projectId?: string;
+            project?: string;
+            reason: string;
+            parse?: {
+                state: string;
+                encoding?: string;
+                notice?: string;
+                error?: string;
+                pages?: number;
+            };
+            index?: components["schemas"]["LibraryIndexState"];
+            availableActions?: ("copy" | "skip")[];
+            error?: string;
+            chunks?: number;
+            copyName?: string;
+            content?: string;
+            canonicalId?: string | null;
+            duplicateOf?: string | null;
+            createdAt?: string;
+            updatedAt?: string;
+            sourceSize?: number;
+            sourceMtime?: number;
+            originalName?: string;
+            hash?: string;
+            copiedAt?: string;
+            sharedCopy?: boolean;
+            previousFileId?: string;
+        };
+        LibraryFilePage: {
+            items: components["schemas"]["LibraryFile"][];
+            total: number;
+            nextCursor: string | null;
+        };
+        ThreadDirectoryItem: {
+            id: string;
+            threadId?: string;
+            threadTitle?: string;
+            query: string;
+            createdAt: string;
+            project?: string;
+            projectId?: string | null;
+            references?: components["schemas"]["ConversationReference"][];
+        };
+        ThreadDirectoryPage: {
+            items: components["schemas"]["ThreadDirectoryItem"][];
+            total: number;
+            nextCursor: string | null;
+        };
+        AccountingImportSummary: {
+            id: string;
+            revision: number;
+            createdAt?: string;
+            updatedAt?: string;
+            status: string;
+            notice: string;
+            error: string;
+            original: {
+                name: string;
+                url: string;
+                mime: string;
+                size: number;
+                sha256: string;
+            };
+            notices?: string[];
+            parsingStartedAt?: number;
+            parsingFinishedAt?: number;
+            remainingRows?: number;
+            summary?: {
+                dataRows: number;
+                needsReview: number;
+                excluded: number;
+                duplicateRows: number;
+            };
+        };
+        AccountingImportList: {
+            imports: components["schemas"]["AccountingImportSummary"][];
+            total: number;
+            offset: number;
+            limit: number;
+            nextOffset: number | null;
+        };
+        AccountingReviewRecord: {
+            id: string;
+            revision: number;
+            createdAt?: string;
+            updatedAt?: string;
+            batchId: string;
+            batchRevision: number;
+            status: string;
+            choices: {
+                rowId: string;
+                decision: string;
+                reason?: string;
+                draft?: {
+                    date: string;
+                    category: string;
+                    amountCents: number;
+                    note: string;
+                };
+            }[];
+            duplicates: {
+                rowId: string;
+                matches: {
+                    kind: string;
+                    id: string;
+                    rowNumber?: number;
+                    sheetName?: string;
+                    date?: string;
+                    amountCents?: number;
+                    note?: string;
+                    basis: string[];
+                }[];
+            }[];
+            reviewToken: string;
+            confirmedAt?: string;
+            transactionIds?: string[];
+        };
+        ResearchTask: {
+            id: string;
+            planVersion?: number;
+            minutes: number;
+            requirement: string;
+            completionConditions?: components["schemas"]["CompletionCondition"][];
+            repeat: string;
+            sourceContext?: {
+                sources: (components["schemas"]["ConversationReference"] & {
+                    quote: string;
+                })[];
+                summary: string;
+                history: {
+                    id: string;
+                    query: string;
+                    answer: string;
+                }[];
+                notice: string;
+            };
+            sourceResearch?: {
+                taskId: string;
+                artifactId: string;
+            };
+            sourceTodoId?: string;
+            sourceTodoDay?: string;
+            /** @enum {string} */
+            executionMode: "research";
+            revision: number;
+            title: string;
+            goal?: string;
+            status: string;
+            supervisionStatus?: string;
+            notice?: string;
+            time?: string;
+            plan: components["schemas"]["ResearchPlan"] | null;
+            logs: {
+                at: string;
+                type: string;
+                content: string;
+            }[];
+            outputs: string[];
+            researchBrief: components["schemas"]["ResearchBrief"];
+            researchVersion?: number;
+            researchAttempt?: number;
+            researchReportVersion?: number;
+            references: components["schemas"]["ResearchReference"][];
+            externalReferences?: {
+                id: string;
+                revision: number;
+            }[];
+            researchJobId?: string;
+            researchApproval?: {
+                planVersion: number;
+                planHash: string;
+                confirmedAt: string;
+            };
+            candidateDecisions?: {
+                [key: string]: components["schemas"]["ResearchCandidateDecision"];
+            };
+            handoff?: {
+                id: string;
+                text: string;
+                state: string;
+            };
+            reportAcknowledgement?: {
+                artifactId: string;
+                artifactRevision: number;
+                at: string;
+            };
+        };
+        ThreadContext: {
+            text: string;
+            covered: string[];
+            signatures: {
+                [key: string]: string;
+            };
+            version: number;
+            updatedAt?: string;
+            /** @enum {string} */
+            status: "deleted" | "building" | "stale" | "pending" | "ready";
+            uncoveredCount: number;
+            budgetExceeded: boolean;
+            totalTurns: number;
+            notice: string;
+        };
+        CapabilityTest: {
+            ok: boolean;
+            checkedAt: string;
+            configRevision: string;
+            durationMs: number;
+            error?: string;
+            detail?: {
+                response?: string;
+                notice?: string;
+                collections?: number;
+                results?: number;
+                dimensions?: number;
+                model?: string;
+                elapsedMs?: number;
+            } & {
+                [key: string]: unknown;
+            };
+        };
+        SupervisionRecap: {
+            id: string;
+            revision: number;
+            createdAt: string;
+            updatedAt: string;
+            day: string;
+            signature: string;
+            items: {
+                runId: string;
+                advice: string;
+            }[];
+            facts: components["schemas"]["SupervisionRecapFacts"];
+            /** @enum {string} */
+            mode: "model";
+        };
+        SupervisionRecapFacts: {
+            day: string;
+            signature: string;
+            items: components["schemas"]["SupervisionRecapEntry"][];
+            totals: {
+                planned: number;
+                completed: number;
+                skipped: number;
+                pending: number;
+                seconds: number;
+                minimumSeconds: number;
+                unknownRequirements: number;
+            };
+        };
+        ResearchExternal: {
+            id: string;
+            revision: number;
+            createdAt: string;
+            updatedAt: string;
+            taskId: string;
+            handoffId: string;
+            reportVersion: number;
+            title: string;
+            text: string;
+            urls: string[];
+            /** @enum {string} */
+            evidenceType: "user_fill";
+            /** @enum {string} */
+            verificationStatus: "unverified";
+            providedAt: string;
+        };
+        MemorySourcePreview: {
+            memoryId: string;
+            memoryRevision: number;
+            /** @enum {string} */
+            kind: "note" | "event" | "libraryFile" | "conversation";
+            id: string;
+            revision: number;
+            title: string;
+            text: string;
+            truncated: boolean;
+            totalCharacters: number;
+        };
+        LibrarySearchHit: {
+            id: string;
+            revision: number;
+            kind?: string;
+            title: string;
+            text: string;
+            content?: string;
+            sourcePath?: string;
+            score?: number;
+            index?: number;
+            start: number;
+            end: number;
+            canonicalId?: string | null;
+        };
+        LibrarySearch: {
+            /** @enum {string} */
+            mode: "keyword" | "hybrid";
+            results: components["schemas"]["LibrarySearchHit"][];
+            retrieval?: {
+                mode?: string;
+                notice?: string;
+                dense?: boolean;
+                sparse?: boolean;
+            };
+        };
+        ResearchSearchPricingInput: {
+            revision: number;
+            /** @enum {boolean} */
+            enabled: false;
+        } | {
+            revision: number;
+            /** @enum {boolean} */
+            enabled: true;
+            maxCostMicros: number;
+            reviewUntil: string;
+            /** @enum {boolean} */
+            acknowledged: true;
+        };
+        ResearchCreate: {
+            /** @enum {string} */
+            executionMode: "research";
+            opId: string;
+            threadId?: string;
+            references?: {
+                /** @enum {string} */
+                kind: "note" | "event" | "libraryFile";
+                id: string;
+                revision: number;
+            }[];
+            researchBrief: {
+                topic: string;
+                background?: string;
+                questions: string[];
+                constraints?: string;
+                /** @enum {string} */
+                type: "learning" | "comparison" | "feasibility" | "custom";
+                asOf?: string;
+                expectedOutput: string;
+                web?: boolean;
+            };
+        };
+        ResearchAction: {
+            /** @enum {string} */
+            action: "acknowledge_report";
+            opId: string;
+            revision: number;
+            artifactId: string;
+            artifactRevision: number;
+            /** @enum {boolean} */
+            approved: true;
+        } | {
+            /** @enum {string} */
+            action: "save_candidate";
+            opId: string;
+            revision: number;
+            artifactId: string;
+            artifactRevision: number;
+            candidateIndex: number;
+            title: string;
+            description: string;
+            target: {
+                /** @enum {string} */
+                kind: "event";
+                /** @enum {string} */
+                priority: "normal" | "high";
+                /** @enum {string} */
+                eventType: "one_off" | "long_term";
+                dueAt: string;
+            } | {
+                /** @enum {string} */
+                kind: "action";
+                time: string;
+                minutes: number;
+            };
+        } | {
+            /** @enum {string} */
+            action: "handoff";
+            opId: string;
+            revision: number;
+            brief: string;
+        } | {
+            /** @enum {string} */
+            action: "external";
+            opId: string;
+            revision: number;
+            handoffId: string;
+            text: string;
+            urls: string[];
+        } | {
+            /** @enum {string} */
+            action: "end_handoff";
+            opId: string;
+            revision: number;
+            handoffId: string;
+        } | {
+            /** @enum {string} */
+            action: "confirm";
+            opId: string;
+            revision: number;
+            planVersion: number;
+            planHash: string;
+            /** @enum {boolean} */
+            approved: true;
+        } | {
+            /** @enum {string} */
+            action: "cancel" | "retry" | "retry_web";
+            opId: string;
+            revision: number;
+        };
+        AccountingClassifyRequest: {
+            opId: string;
+            revision: number;
+            rows: {
+                rowId: string;
+                /** @enum {string} */
+                type: "income" | "expense";
+                note: string;
+            }[];
+        };
+        AccountingDraftInput: {
+            /** @enum {string} */
+            type: "income" | "expense";
+            amount?: string | number;
+            amountCents?: number;
+            category: string;
+            date: string;
+            note: string;
+            /** @enum {string} */
+            channel: "wechat" | "alipay" | "ocr" | "manual";
+            merchant: string;
+            sourceRef: string;
+        };
+        AccountingReviewInput: {
+            opId: string;
+            revision: number;
+            choices: ({
+                rowId: string;
+                /** @enum {string} */
+                decision: "include";
+                draft: components["schemas"]["AccountingDraftInput"];
+                acceptWarnings?: boolean;
+                exclusionOverride?: string;
+            } | {
+                rowId: string;
+                /** @enum {string} */
+                decision: "skip";
+                reason: string;
+            })[];
+        };
+        AccountingCommitInput: {
+            opId: string;
+            revision: number;
+            reviewId: string;
+            reviewToken: string;
+            /** @enum {boolean} */
+            approved: true;
+            duplicateAcknowledgements: string[];
+        };
+        AccountingCommitReceipt: {
+            batchId: string;
+            revision: number;
+            imported: number;
+            skipped: number;
+            remainingRows: number;
+            transactionIds: string[];
+        };
+        TransactionInput: {
+            opId?: string;
+            /** @enum {string} */
+            type?: "income" | "expense";
+            amount?: string | number;
+            amountCents?: number;
+            category?: string;
+            date?: string;
+            note?: string;
+            sourceRef?: string;
+            /** @enum {string} */
+            source?: "manual" | "wechat" | "alipay" | "ocr";
+            revision?: number;
+        };
+        TransactionPatch: {
+            opId?: string;
+            /** @enum {string} */
+            type?: "income" | "expense";
+            amount?: string | number;
+            amountCents?: number;
+            category?: string;
+            date?: string;
+            note?: string;
+            sourceRef?: string;
+            /** @enum {string} */
+            source?: "manual" | "wechat" | "alipay" | "ocr";
+            revision: number;
+        };
+        SetCategoriesRequest: {
+            opId: string;
+            categoryId: string;
+            notes: {
+                id: string;
+                revision: number;
+            }[];
+            reason?: string;
+        };
+        EditMemoryProposal: {
+            revision: number;
+            content: string;
+            /** @enum {string} */
+            scope?: "通用" | "周报" | "文章";
+            /** @enum {string} */
+            scopeKind?: "global" | "project" | "thread";
+            scopeId?: string;
+        };
+        ReviewMemoryBatch: {
+            revision: number;
+            selected: {
+                index: number;
+                /** @enum {string} */
+                keep?: "new" | "existing";
+            }[];
+        };
+        TranscriptHistoryVersion: {
+            id: string;
+            revision?: number;
+            createdAt?: string;
+            updatedAt?: string;
+            noteId: string;
+            noteRevision?: number;
+            transcript: components["schemas"]["Transcript"];
+        };
+        QuietHours: {
+            quietStart: number;
+            quietEnd: number;
+        };
+        WorkTaskCreate: components["schemas"]["ResearchCreate"] | {
+            goal: string;
+            /** @enum {string} */
+            executionMode?: "supervision";
+            minutes?: number | string;
+            time?: string;
+            startTime?: string;
+            requirement?: string;
+            threadId?: string;
+            references?: {
+                id: string;
+                /** @enum {string} */
+                kind: "note" | "event" | "libraryFile";
+                revision?: number;
+            }[];
+            /** @enum {string} */
+            repeat?: "once" | "daily";
+            web?: boolean;
+        };
+        WorkTaskAction: components["schemas"]["ResearchAction"] | {
+            /** @enum {string} */
+            action: "start" | "pause" | "cancel";
+            planVersion?: number;
+        } | {
+            /** @enum {string} */
+            action: "external";
+            text: string;
+        };
+        WorkRunAction: {
+            /** @enum {string} */
+            action: "start" | "stop";
+            opId?: string;
+        } | {
+            /** @enum {string} */
+            action: "adjust";
+            opId: string;
+            minutes: number;
+            reason: string;
+            startedAt?: string;
+            endedAt?: string;
+        } | {
+            /** @enum {string} */
+            action: "evidence";
+            opId: string;
+            evidenceRevision: number;
+            evidence: string;
+            artifactId?: string;
+            evidenceRefs?: components["schemas"]["EvidenceReference"][];
+        } | {
+            /** @enum {string} */
+            action: "confirm";
+            opId: string;
+            evidenceRevision: number;
+            assessmentId: string;
+        } | {
+            /** @enum {string} */
+            action: "snooze";
+            opId?: string;
+            scheduleVersion?: number;
+            until: string;
+        } | {
+            /** @enum {string} */
+            action: "skip";
+            opId?: string;
+            scheduleVersion?: number;
+            reason: string;
+        } | {
+            /** @enum {string} */
+            action: "retry-reminder";
+            opId: string;
+            jobId: string;
+        };
+        EventCheckRequest: {
+            opId?: string;
+            revision?: number;
+            occurrenceId?: string;
+        };
+        WorkRunActionResult: components["schemas"]["WorkRun"] | {
+            id: string;
+            /** @constant */
+            state: "pending";
+        };
+        ExportAttachment: {
+            id: string;
+            name: string;
+            size: number;
+            mime: string;
+        };
+        ExportNote: {
+            summaryInputs?: {
+                sourceRevision: number;
+                imageIds: string[];
+                imageNames: string[];
+                textCharacters: number;
+            };
+            transcript?: components["schemas"]["Transcript"];
+            referenceIssue?: string;
+            categoryId?: string;
+            projectId?: string;
+            id: string;
+            revision: number;
+            title: string;
+            content: string;
+            summary: string;
+            summaryMode?: "ai" | "rule";
+            type: "text" | "document" | "image" | "audio";
+            tags: string[];
+            project: string;
+            pinned: boolean;
+            createdAt: string;
+            updatedAt: string;
+            sample?: boolean;
+            status: string;
+            notice?: string;
+            attachments: components["schemas"]["ExportAttachment"][];
+            sourcePath?: string;
+            score?: number;
+            classification?: {
+                state: string;
+                reason?: string;
+            };
+            summaryStale?: boolean;
+        };
+        ExportEvent: {
+            occurredAt?: string | null;
+            relatedTaskIds?: string[];
+            reviewStale?: boolean;
+            reviewSnapshot?: {
+                sources: {
+                    kind: string;
+                    id: string;
+                    revision: number | null;
+                    title: string;
+                    missing: boolean;
+                    issue?: string;
+                }[];
+                createdAt: string;
+            } | null;
+            reviewJob?: {
+                id: string;
+                state: string;
+                error?: string;
+            } | null;
+            eventType?: "long_term" | "one_off" | null;
+            lifecycleStatus?: "ongoing" | "ended";
+            currentOccurrenceId?: string | null;
+            id: string;
+            revision: number;
+            title: string;
+            summary: string;
+            tags: string[];
+            project: string;
+            priority: "normal" | "high";
+            dueAt: string;
+            status: "open" | "confirmed" | "ended";
+            sourceNoteId?: string | null;
+            relatedEventIds?: string[];
+            images?: components["schemas"]["ExportAttachment"][];
+            reviewText?: string;
+            reviewNotice?: string;
+            reviewedDueAt?: string;
+            createdAt: string;
+            confirmedAt?: string | null;
+        };
+        ExportAccountingImport: {
+            id: string;
+            revision: number;
+            createdAt?: string;
+            updatedAt?: string;
+            status: string;
+            original: {
+                name: string;
+                mime: string;
+                size: number;
+                sha256: string;
+            } | null;
+            rows: components["schemas"]["AccountingImportRow"][];
+            duplicateGroups?: {
+                id: string;
+                basis: string;
+                rowIds: string[];
+            }[];
+            notice?: string;
+            error?: string;
+            summary?: {
+                dataRows: number;
+                needsReview: number;
+                excluded: number;
+                duplicateRows: number;
+            };
+        };
+        ThreadRecord: {
+            id: string;
+            revision: number;
+            createdAt?: string;
+            updatedAt?: string;
+            threadId?: string;
+            status?: string;
+            title?: string;
+            source?: {
+                kind: string;
+                id: string;
+            };
+            deletedAt?: string;
+        };
+        SourceThreadMapping: {
+            id: string;
+            revision: number;
+            createdAt?: string;
+            updatedAt?: string;
+            threadId: string;
+            sourceKind?: string;
+            sourceId?: string;
+        };
+        ResearchInput: {
+            id: string;
+            revision?: number;
+            createdAt?: string;
+            updatedAt?: string;
+            taskId: string;
+            sources: {
+                id: string;
+                kind: string;
+                revision: number;
+                title: string;
+                content: string;
+            }[];
+            context: {
+                id: string;
+                revision: number;
+                query: string;
+                answer: string;
+            }[];
+            contextSummary?: {
+                text: string;
+                version: number;
+                sources: {
+                    id: string;
+                    signature: string;
+                }[];
+            } | null;
+        };
+        BusinessExport: {
+            /** @constant */
+            version: 2;
+            exportedAt: string;
+            exportNotice: string;
+            coverage: {
+                [key: string]: number;
+            };
+            notes: components["schemas"]["ExportNote"][];
+            events: components["schemas"]["ExportEvent"][];
+            eventOccurrences: components["schemas"]["EventCheck"][];
+            todos: components["schemas"]["Todo"][];
+            transactions: components["schemas"]["LedgerTransaction"][];
+            accountingBudget: components["schemas"]["AccountingBudget"][];
+            accountingImports: components["schemas"]["ExportAccountingImport"][];
+            accountingReviews: components["schemas"]["AccountingReviewRecord"][];
+            accountingClassifications: components["schemas"]["AccountingClassification"][];
+            accountingChecks: components["schemas"]["AccountingCheck"][];
+            tasks: components["schemas"]["Task"][];
+            memories: components["schemas"]["Memory"][];
+            artifacts: components["schemas"]["Artifact"][];
+            conversations: components["schemas"]["Conversation"][];
+            workTasks: (components["schemas"]["WorkTask"] | components["schemas"]["ResearchTask"])[];
+            workRuns: components["schemas"]["WorkRun"][];
+            library: components["schemas"]["LibraryFile"][];
+            audioTranscriptVersions: components["schemas"]["TranscriptHistoryVersion"][];
+            projects: components["schemas"]["Project"][];
+            noteCategories: components["schemas"]["Category"][];
+            classificationCorrections: components["schemas"]["ClassificationCorrection"][];
+            threads: components["schemas"]["ThreadRecord"][];
+            sourceThreads: components["schemas"]["SourceThreadMapping"][];
+            supervisionRecaps: components["schemas"]["SupervisionRecap"][];
+            supervisionEvidenceChecks: components["schemas"]["EvidenceHistoryDetail"][];
+            researchInputs: components["schemas"]["ResearchInput"][];
+            researchExternal: components["schemas"]["ResearchExternal"][];
+        };
+        ClassificationCorrectionRecord: {
+            id: string;
+            revision: number;
+            sourceTitle?: string;
+            sourceRevision: number;
+            oldCategoryName?: string | null;
+            newCategoryName?: string;
+            classifierRevision: number;
+            model: string | null;
+            promptVersion: string | null;
+            reason: string;
+            status: "open" | "resolved";
+            resolution?: string;
+            createdAt: string;
+            history?: {
+                status: string;
+                resolution: string;
+                at: string;
+            }[];
+        };
     };
     responses: never;
     parameters: never;
@@ -3274,18 +4934,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchSearchPricing"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3301,24 +4965,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["ResearchSearchPricingInput"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchSearchPricing"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3334,24 +5002,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["ResearchCreate"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3372,18 +5044,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchExternal"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3403,18 +5079,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchDetail"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3432,24 +5112,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["ResearchAction"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ResearchTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3460,25 +5144,42 @@ export interface operations {
     };
     getResearchSources: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                cursor?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind?: "note" | "event" | "libraryFile";
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["ResearchReference"][];
+                        total: number;
+                        nextCursor: string | null;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3503,6 +5204,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3512,6 +5215,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3522,25 +5227,34 @@ export interface operations {
     };
     getThreads: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                cursor?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ThreadDirectoryPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3551,7 +5265,12 @@ export interface operations {
     };
     getThreadsByIdTurns: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                cursor?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -3560,18 +5279,26 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["Conversation"][];
+                        total: number;
+                        nextCursor: string | null;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3589,18 +5316,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["StorageStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3625,6 +5356,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3634,6 +5367,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3657,6 +5392,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3666,6 +5403,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3692,6 +5431,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3701,6 +5442,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3718,18 +5461,24 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["Capability"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3747,24 +5496,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["EmptyRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["CapabilityTest"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3785,6 +5538,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3794,6 +5549,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3818,6 +5575,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3827,6 +5586,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3847,6 +5608,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3856,6 +5619,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3875,18 +5640,24 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        classifications: components["schemas"]["AccountingClassification"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3904,24 +5675,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["AccountingClassifyRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingClassification"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3939,24 +5714,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["AccountingReviewInput"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingReviewPreview"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -3974,24 +5753,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["AccountingCommitInput"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingCommitReceipt"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4011,18 +5794,24 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        reviews: components["schemas"]["AccountingReviewRecord"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4033,25 +5822,34 @@ export interface operations {
     };
     getAccountingImports: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingImportList"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4072,24 +5870,27 @@ export interface operations {
                 "multipart/form-data": {
                     /** Format: binary */
                     file: string;
-                    opId?: string;
-                    source?: string;
+                    opId: string;
                 };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
-            200: {
+            /** @description Success */
+            201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingImportPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4100,7 +5901,12 @@ export interface operations {
     };
     getAccountingImportsById: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -4109,18 +5915,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingImportPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4138,24 +5948,31 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId: string;
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingImportPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4179,6 +5996,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4188,6 +6007,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4203,24 +6024,32 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                    amount?: string | number;
+                    amountCents?: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingBudget"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4238,18 +6067,25 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        current: components["schemas"]["AccountingCheck"] | null;
+                        history: components["schemas"]["AccountingCheck"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4265,24 +6101,32 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    day: string;
+                    /** @enum {boolean} */
+                    confirmed: true;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingCheck"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4293,25 +6137,46 @@ export interface operations {
     };
     getAccountingView: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                period?: "all" | "today" | "week" | "month" | "custom";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind?: "all" | "income" | "expense";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                category?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                start?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                end?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                search?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                rankMonth: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                chartYear: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["AccountingView"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4322,25 +6187,48 @@ export interface operations {
     };
     getEventReferences: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind: "event" | "workTask";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                excludeId?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: {
+                            id: string;
+                            title: string;
+                            revision: number;
+                            status?: string;
+                        }[];
+                        total: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4365,6 +6253,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4376,6 +6266,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4386,7 +6278,14 @@ export interface operations {
     };
     getLibraryByIdTasks: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                cursor?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -4395,18 +6294,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryTaskPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4424,24 +6327,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId: string;
+                    taskId: string;
+                    taskRevision: number;
+                    sourceRevision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4461,18 +6373,26 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["TaskLibraryReference"][];
+                        revision: number;
+                        editable: boolean;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4491,24 +6411,30 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4519,25 +6445,32 @@ export interface operations {
     };
     getLibrary: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                summary?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4548,25 +6481,48 @@ export interface operations {
     };
     getLibraryFiles: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                status?: "" | "ready" | "pending" | "copied" | "queued" | "copying" | "failed" | "skipped" | "duplicate" | "archived";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                projectId?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                project?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                directory?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                extension?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                dateFrom?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                dateTo?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                cursor?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryFilePage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4582,24 +6538,30 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    path?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4615,24 +6577,31 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    /** @enum {string} */
+                    action: "pause" | "resume";
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4648,24 +6617,46 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId: string;
+                    /** @enum {string} */
+                    action: "copy" | "skip" | "retry";
+                    items: {
+                        id: string;
+                        revision: number;
+                    }[];
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        /** @enum {boolean} */
+                        ok: true;
+                        /** @enum {string} */
+                        action: "copy" | "skip";
+                        items: {
+                            id: string;
+                            revision: number;
+                            status: string;
+                        }[];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4683,24 +6674,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    /** @enum {string} */
+                    action: "copy" | "skip" | "retry";
+                    revision?: number;
+                    opId?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4711,25 +6711,46 @@ export interface operations {
     };
     getLibrarySearch: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                status?: "" | "ready" | "pending" | "copied" | "queued" | "copying" | "failed" | "skipped" | "duplicate" | "archived";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                projectId?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                project?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                directory?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                extension?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                dateFrom?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                dateTo?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibrarySearch"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4747,24 +6768,37 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId: string;
+                    revision: number;
+                    title: string;
+                    tags: string[];
+                    projectId: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        file: components["schemas"]["LibraryFile"];
+                        savedRevision: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4784,18 +6818,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryIndexState"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4813,24 +6851,30 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryIndexState"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4850,18 +6894,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryFile"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4879,24 +6927,30 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision?: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LibraryStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4907,7 +6961,9 @@ export interface operations {
     };
     getLibraryByIdFile: {
         parameters: {
-            query?: never;
+            query?: {
+                download?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -4920,6 +6976,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4929,6 +6987,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4949,6 +7009,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4960,6 +7022,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4984,6 +7048,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -4993,6 +7059,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5019,6 +7087,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5028,6 +7098,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5043,24 +7115,33 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["SetCategoriesRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        /** @constant */
+                        ok: true;
+                        ids: string[];
+                        correctionIds: string[];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original error status and envelope */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5071,25 +7152,39 @@ export interface operations {
     };
     getClassificationCorrections: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                status?: "open" | "resolved";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["ClassificationCorrection"][];
+                        total: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5107,24 +7202,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                    /** @enum {string} */
+                    status: "open" | "resolved";
+                    resolution?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ClassificationCorrectionRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5145,6 +7249,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5156,6 +7262,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5180,6 +7288,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5189,6 +7299,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5215,6 +7327,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5224,6 +7338,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5241,24 +7357,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["ProjectLink"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Note"] | components["schemas"]["EventRecord"] | components["schemas"]["LibraryFile"] | components["schemas"]["Artifact"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5269,7 +7389,16 @@ export interface operations {
     };
     getProjectsByIdCandidates: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind: "note" | "event" | "libraryFile" | "artifact";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -5278,18 +7407,31 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: {
+                            id: string;
+                            revision: number;
+                            title: string;
+                            projectId: string | null;
+                            projectName: string | null;
+                        }[];
+                        total: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5300,7 +7442,14 @@ export interface operations {
     };
     getProjectsByIdItems: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind: "note" | "event" | "libraryFile" | "artifact" | "memory";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -5309,18 +7458,25 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: (components["schemas"]["Note"] | components["schemas"]["EventRecord"] | components["schemas"]["LibraryFile"] | components["schemas"]["Artifact"] | components["schemas"]["Memory"])[];
+                        total: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5340,18 +7496,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ClassificationState"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5369,24 +7529,30 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Ok"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5413,6 +7579,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5422,6 +7590,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5442,6 +7612,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5451,6 +7623,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5471,6 +7645,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5480,6 +7656,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5504,6 +7682,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5513,6 +7693,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5530,18 +7712,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkerStatus"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5562,6 +7748,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5571,6 +7759,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5591,6 +7781,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5600,6 +7792,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5623,6 +7817,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5632,6 +7828,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5657,6 +7855,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5668,6 +7868,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5685,24 +7887,32 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["TodoUpgradeRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        taskId: string;
+                        runId: string;
+                        todoId: string;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5727,6 +7937,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5736,6 +7948,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5762,6 +7976,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5771,6 +7987,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5797,6 +8015,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5806,6 +8026,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5826,6 +8048,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5837,6 +8061,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5852,24 +8078,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["TransactionInput"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
-            200: {
+            /** @description Success */
+            201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LedgerTransaction"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5896,6 +8126,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5905,6 +8137,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5922,24 +8156,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["TransactionPatch"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["LedgerTransaction"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5960,6 +8198,8 @@ export interface operations {
             /** @description Retired endpoint; use accounting imports. */
             410: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -5980,6 +8220,8 @@ export interface operations {
             /** @description Retired endpoint; use accounting imports. */
             410: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6000,6 +8242,8 @@ export interface operations {
             /** @description Retired endpoint; use accounting imports. */
             410: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6024,6 +8268,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6033,6 +8279,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6057,6 +8305,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6066,6 +8316,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6075,6 +8327,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6101,6 +8355,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6110,6 +8366,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6136,6 +8394,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6145,6 +8405,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6167,6 +8429,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6176,6 +8440,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6200,6 +8466,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6212,15 +8480,30 @@ export interface operations {
                         sourceNoteId: string | null;
                         analyzedImages: number;
                         inputReceipt: {
-                            [key: string]: unknown;
+                            noteId: string | null;
+                            noteRevision: number | null;
+                            eventId: string | null;
+                            eventRevision: number | null;
+                            images: {
+                                id: string;
+                                name: string;
+                            }[];
+                            textCharacters: number;
+                            usedCurrentDraft: boolean;
                         };
                         inputNotice: string;
+                        removedSuggestions: {
+                            id: string | null;
+                            reason: string;
+                        }[];
                     };
                 };
             };
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6245,6 +8528,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6254,6 +8539,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6280,6 +8567,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6289,6 +8578,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6315,6 +8606,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6324,6 +8617,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6343,22 +8638,26 @@ export interface operations {
         };
         requestBody?: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["EventCheckRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
-            200: {
+            /** @description Success */
+            202: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EventRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original error status and envelope */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6378,18 +8677,24 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["EventCheck"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6407,24 +8712,32 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId?: string;
+                    revision: number;
+                    dueAt: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EventRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6442,24 +8755,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId?: string;
+                    revision: number;
+                    occurrenceId: string;
+                    dueAt: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EventRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6477,24 +8799,31 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId?: string;
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EventRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6512,24 +8841,32 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId?: string;
+                    revision: number;
+                    occurrenceId?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EventRecord"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6540,7 +8877,9 @@ export interface operations {
     };
     getEventsByIdImageByImageId: {
         parameters: {
-            query?: never;
+            query?: {
+                download?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -6554,6 +8893,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6563,6 +8904,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6573,25 +8916,34 @@ export interface operations {
     };
     getComputerFiles: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                path?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ComputerFileListing"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6607,24 +8959,32 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    path: string;
+                    opId?: string;
+                    categoryId?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
-            200: {
+            /** @description Success */
+            201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Note"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6655,6 +9015,8 @@ export interface operations {
             /** @description Saved note */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6664,6 +9026,8 @@ export interface operations {
             /** @description Saved note */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6673,6 +9037,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6702,6 +9068,8 @@ export interface operations {
             /** @description Saved note */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6711,6 +9079,8 @@ export interface operations {
             /** @description Saved note */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6720,6 +9090,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6747,6 +9119,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6756,6 +9130,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6766,7 +9142,9 @@ export interface operations {
     };
     getNotesByIdFileByAttachment: {
         parameters: {
-            query?: never;
+            query?: {
+                download?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -6780,6 +9158,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6789,6 +9169,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6804,24 +9186,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["SearchBriefRequest"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["SearchBrief"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6841,18 +9227,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ThreadContext"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6870,24 +9260,24 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
-            content: {
-                "application/json": unknown;
-            };
-        };
+        requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ThreadContext"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6912,6 +9302,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6921,6 +9313,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6943,6 +9337,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6952,6 +9348,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6978,6 +9376,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -6987,6 +9387,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7005,24 +9407,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["EditMemoryProposal"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Conversation"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7040,24 +9446,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["ReviewMemoryBatch"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Conversation"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7080,6 +9490,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7089,6 +9501,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7104,24 +9518,35 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    /** @enum {string} */
+                    template: "weekly" | "article";
+                    /** @enum {number} */
+                    days: 7 | 30 | 3650;
+                    instructions?: string;
+                    project?: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
-            200: {
+            /** @description Success */
+            201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Artifact"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7146,6 +9571,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7155,6 +9582,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7181,6 +9610,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7190,6 +9621,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7216,6 +9649,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7225,6 +9660,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7251,6 +9688,8 @@ export interface operations {
                 headers: {
                     "Content-Disposition"?: string;
                     "X-Artifact-Revision"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7260,6 +9699,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7284,6 +9725,8 @@ export interface operations {
             /** @description Success */
             201: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7293,6 +9736,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7312,18 +9757,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["MemorySourcePreview"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7350,6 +9799,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7359,6 +9810,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7385,6 +9838,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7394,6 +9849,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7414,6 +9871,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7423,6 +9882,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7447,6 +9908,8 @@ export interface operations {
             /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7456,6 +9919,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7471,24 +9936,29 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
-            content: {
-                "application/json": unknown;
-            };
-        };
+        requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        /** @enum {boolean} */
+                        ok: true;
+                        response: string;
+                        configRevision: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7506,18 +9976,25 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["AiLogEvent"][];
+                        file: string;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7535,18 +10012,23 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["BusinessExport"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original error status and envelope */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7557,7 +10039,10 @@ export interface operations {
     };
     getNotesByIdTranscriptHistory: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -7566,18 +10051,25 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        versions: components["schemas"]["TranscriptHistoryVersion"][];
+                        nextOffset: number | null;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7597,18 +10089,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["TranscriptionState"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7626,24 +10122,37 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                    /** @enum {string} */
+                    action: "start" | "cancel";
+                    options?: {
+                        /** @enum {string} */
+                        language?: "zh" | "en";
+                        speakers?: number;
+                    };
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Ok"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7661,24 +10170,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    revision: number;
+                    transcriptRevision: number;
+                    texts: string[];
+                    speakerIds?: (string | null)[];
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Note"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7698,18 +10216,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["ProcessingState"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7727,24 +10249,32 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    /** @enum {string} */
+                    action: "retry" | "cancel";
+                    revision: number;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Ok"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7762,18 +10292,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["PetReminderSnapshot"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7784,25 +10318,32 @@ export interface operations {
     };
     getSupervisionRecap: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                day: string;
+            };
             header?: never;
             path?: never;
             cookie?: never;
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["SupervisionRecapSnapshot"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7818,24 +10359,32 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    day: string;
+                    signature: string;
+                    opId: string;
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["SupervisionRecap"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7853,18 +10402,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["QuietHours"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7880,24 +10433,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["QuietHours"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["Ok"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7908,7 +10465,10 @@ export interface operations {
     };
     getWorkRunsByIdEvidenceHistory: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                before?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -7917,18 +10477,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EvidenceHistoryPage"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7949,18 +10513,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["EvidenceHistoryDetail"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -7971,7 +10539,16 @@ export interface operations {
     };
     getWorkRunsByIdEvidenceOptions: {
         parameters: {
-            query?: never;
+            query: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                kind: "note" | "libraryFile" | "artifact";
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                q?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                offset?: string;
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                limit?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -7980,18 +10557,25 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["EvidenceSourceItem"][];
+                        total: number;
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8002,7 +10586,10 @@ export interface operations {
     };
     getWorkRunsByIdEvidenceSources: {
         parameters: {
-            query?: never;
+            query?: {
+                /** @description Raw URL value. Domain validation owns normalization, ranges, calendar validity and cursor scope. */
+                refs?: string;
+            };
             header?: never;
             path: {
                 id: string;
@@ -8011,18 +10598,24 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": {
+                        items: components["schemas"]["EvidenceSourceItem"][];
+                    };
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8040,18 +10633,22 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTaskList"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8067,24 +10664,28 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["WorkTaskCreate"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTask"] | components["schemas"]["ResearchTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8109,6 +10710,8 @@ export interface operations {
             200: {
                 headers: {
                     "Content-Disposition"?: string;
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8118,6 +10721,8 @@ export interface operations {
             /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8135,24 +10740,33 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": {
+                    opId: string;
+                    planVersion: number;
+                    minutes: number;
+                    conditions: components["schemas"]["CompletionCondition"][];
+                };
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8170,24 +10784,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["WorkTaskAction"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkTask"] | components["schemas"]["ResearchTask"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
@@ -8205,24 +10823,28 @@ export interface operations {
             };
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
-                "application/json": unknown;
+                "application/json": components["schemas"]["WorkRunAction"];
             };
         };
         responses: {
-            /** @description Existing successful response; shape is still owned by the business module. */
+            /** @description Success */
             200: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": unknown;
+                    "application/json": components["schemas"]["WorkRunActionResult"];
                 };
             };
-            /** @description Existing error envelope and HTTP status preserved. */
+            /** @description Original HTTP error status; state conflicts may include current. */
             default: {
                 headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
                     [name: string]: unknown;
                 };
                 content: {

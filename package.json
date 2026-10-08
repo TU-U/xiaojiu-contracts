@@ -1,9 +1,15 @@
 {
   "name": "xiaojiu-contracts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Language-neutral HTTP contracts for Xiaojiu / Shiguang consumers",
-  "scripts": {"generate":"node scripts/generate.mjs","check":"node scripts/generate.mjs --check"},
-  "devDependencies": {"openapi-typescript":"7.13.0","typescript":"5.9.3"}
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check": "node scripts/generate.mjs --check"
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3"
+  }
 }

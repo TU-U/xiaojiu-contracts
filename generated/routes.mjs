@@ -1,6 +1,6 @@
 // Generated from openapi.json. Do not edit.
 export const API_BASE = "/api/v1";
-export const CONTRACT_VERSION = "0.1.0";
+export const CONTRACT_VERSION = "0.2.0";
 export const routes = [
   {
     "method": "GET",
@@ -8,7 +8,7 @@ export const routes = [
     "path": "/api/v1/research-search-settings",
     "schemaPath": "/research-search-settings",
     "operationId": "getResearchSearchSettings",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -17,7 +17,7 @@ export const routes = [
     "path": "/api/v1/research-search-settings",
     "schemaPath": "/research-search-settings",
     "operationId": "postResearchSearchSettings",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -26,7 +26,7 @@ export const routes = [
     "path": "/api/v1/research-tasks",
     "schemaPath": "/research-tasks",
     "operationId": "postResearchTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -35,7 +35,7 @@ export const routes = [
     "path": "/api/v1/research-tasks/:id/external/:sourceId",
     "schemaPath": "/research-tasks/{id}/external/{sourceId}",
     "operationId": "getResearchTasksByIdExternalBySourceId",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -44,7 +44,7 @@ export const routes = [
     "path": "/api/v1/research-tasks/:id",
     "schemaPath": "/research-tasks/{id}",
     "operationId": "getResearchTasksById",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -53,7 +53,7 @@ export const routes = [
     "path": "/api/v1/research-tasks/:id/action",
     "schemaPath": "/research-tasks/{id}/action",
     "operationId": "postResearchTasksByIdAction",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -62,7 +62,7 @@ export const routes = [
     "path": "/api/v1/research-sources",
     "schemaPath": "/research-sources",
     "operationId": "getResearchSources",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -80,7 +80,7 @@ export const routes = [
     "path": "/api/v1/threads",
     "schemaPath": "/threads",
     "operationId": "getThreads",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -89,7 +89,7 @@ export const routes = [
     "path": "/api/v1/threads/:id/turns",
     "schemaPath": "/threads/{id}/turns",
     "operationId": "getThreadsByIdTurns",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -98,7 +98,7 @@ export const routes = [
     "path": "/api/v1/settings/storage",
     "schemaPath": "/settings/storage",
     "operationId": "getSettingsStorage",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -134,7 +134,7 @@ export const routes = [
     "path": "/api/v1/settings/capabilities",
     "schemaPath": "/settings/capabilities",
     "operationId": "getSettingsCapabilities",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -143,7 +143,7 @@ export const routes = [
     "path": "/api/v1/settings/capabilities/:id/test",
     "schemaPath": "/settings/capabilities/{id}/test",
     "operationId": "postSettingsCapabilitiesByIdTest",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -179,7 +179,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/classifications",
     "schemaPath": "/accounting/imports/{id}/classifications",
     "operationId": "getAccountingImportsByIdClassifications",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -188,7 +188,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/classify",
     "schemaPath": "/accounting/imports/{id}/classify",
     "operationId": "postAccountingImportsByIdClassify",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -197,7 +197,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/review",
     "schemaPath": "/accounting/imports/{id}/review",
     "operationId": "postAccountingImportsByIdReview",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -206,7 +206,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/commit",
     "schemaPath": "/accounting/imports/{id}/commit",
     "operationId": "postAccountingImportsByIdCommit",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -215,7 +215,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/reviews",
     "schemaPath": "/accounting/imports/{id}/reviews",
     "operationId": "getAccountingImportsByIdReviews",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -224,7 +224,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports",
     "schemaPath": "/accounting/imports",
     "operationId": "getAccountingImports",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -233,7 +233,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports",
     "schemaPath": "/accounting/imports",
     "operationId": "postAccountingImports",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "multipart"
   },
   {
@@ -242,7 +242,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id",
     "schemaPath": "/accounting/imports/{id}",
     "operationId": "getAccountingImportsById",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -251,7 +251,7 @@ export const routes = [
     "path": "/api/v1/accounting/imports/:id/reparse",
     "schemaPath": "/accounting/imports/{id}/reparse",
     "operationId": "postAccountingImportsByIdReparse",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -269,7 +269,7 @@ export const routes = [
     "path": "/api/v1/accounting/budget",
     "schemaPath": "/accounting/budget",
     "operationId": "patchAccountingBudget",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -278,7 +278,7 @@ export const routes = [
     "path": "/api/v1/accounting/checks",
     "schemaPath": "/accounting/checks",
     "operationId": "getAccountingChecks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -287,7 +287,7 @@ export const routes = [
     "path": "/api/v1/accounting/checks/confirm",
     "schemaPath": "/accounting/checks/confirm",
     "operationId": "postAccountingChecksConfirm",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -296,7 +296,7 @@ export const routes = [
     "path": "/api/v1/accounting/view",
     "schemaPath": "/accounting/view",
     "operationId": "getAccountingView",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -305,7 +305,7 @@ export const routes = [
     "path": "/api/v1/event-references",
     "schemaPath": "/event-references",
     "operationId": "getEventReferences",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -323,7 +323,7 @@ export const routes = [
     "path": "/api/v1/library/:id/tasks",
     "schemaPath": "/library/{id}/tasks",
     "operationId": "getLibraryByIdTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -332,7 +332,7 @@ export const routes = [
     "path": "/api/v1/library/:id/tasks",
     "schemaPath": "/library/{id}/tasks",
     "operationId": "postLibraryByIdTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -341,7 +341,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/:id/library",
     "schemaPath": "/work-tasks/{id}/library",
     "operationId": "getWorkTasksByIdLibrary",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -350,7 +350,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/:id/library/:sourceId",
     "schemaPath": "/work-tasks/{id}/library/{sourceId}",
     "operationId": "deleteWorkTasksByIdLibraryBySourceId",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -359,7 +359,7 @@ export const routes = [
     "path": "/api/v1/library",
     "schemaPath": "/library",
     "operationId": "getLibrary",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -368,7 +368,7 @@ export const routes = [
     "path": "/api/v1/library/files",
     "schemaPath": "/library/files",
     "operationId": "getLibraryFiles",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -377,7 +377,7 @@ export const routes = [
     "path": "/api/v1/library/scan",
     "schemaPath": "/library/scan",
     "operationId": "postLibraryScan",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -386,7 +386,7 @@ export const routes = [
     "path": "/api/v1/library/control",
     "schemaPath": "/library/control",
     "operationId": "postLibraryControl",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -395,7 +395,7 @@ export const routes = [
     "path": "/api/v1/library/decisions",
     "schemaPath": "/library/decisions",
     "operationId": "postLibraryDecisions",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -404,7 +404,7 @@ export const routes = [
     "path": "/api/v1/library/:id/decision",
     "schemaPath": "/library/{id}/decision",
     "operationId": "postLibraryByIdDecision",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -413,7 +413,7 @@ export const routes = [
     "path": "/api/v1/library/search",
     "schemaPath": "/library/search",
     "operationId": "getLibrarySearch",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -422,7 +422,7 @@ export const routes = [
     "path": "/api/v1/library/:id/metadata",
     "schemaPath": "/library/{id}/metadata",
     "operationId": "patchLibraryByIdMetadata",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -431,7 +431,7 @@ export const routes = [
     "path": "/api/v1/library/:id/index",
     "schemaPath": "/library/{id}/index",
     "operationId": "getLibraryByIdIndex",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -440,7 +440,7 @@ export const routes = [
     "path": "/api/v1/library/:id/index",
     "schemaPath": "/library/{id}/index",
     "operationId": "postLibraryByIdIndex",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -449,7 +449,7 @@ export const routes = [
     "path": "/api/v1/library/:id",
     "schemaPath": "/library/{id}",
     "operationId": "getLibraryById",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -458,7 +458,7 @@ export const routes = [
     "path": "/api/v1/library/:id/analyze",
     "schemaPath": "/library/{id}/analyze",
     "operationId": "postLibraryByIdAnalyze",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -503,7 +503,7 @@ export const routes = [
     "path": "/api/v1/notes/categories",
     "schemaPath": "/notes/categories",
     "operationId": "postNotesCategories",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -512,7 +512,7 @@ export const routes = [
     "path": "/api/v1/classification-corrections",
     "schemaPath": "/classification-corrections",
     "operationId": "getClassificationCorrections",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -521,7 +521,7 @@ export const routes = [
     "path": "/api/v1/classification-corrections/:id",
     "schemaPath": "/classification-corrections/{id}",
     "operationId": "patchClassificationCorrectionsById",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -557,7 +557,7 @@ export const routes = [
     "path": "/api/v1/projects/:id/links",
     "schemaPath": "/projects/{id}/links",
     "operationId": "postProjectsByIdLinks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -566,7 +566,7 @@ export const routes = [
     "path": "/api/v1/projects/:id/candidates",
     "schemaPath": "/projects/{id}/candidates",
     "operationId": "getProjectsByIdCandidates",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -575,7 +575,7 @@ export const routes = [
     "path": "/api/v1/projects/:id/items",
     "schemaPath": "/projects/{id}/items",
     "operationId": "getProjectsByIdItems",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -584,7 +584,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/classification",
     "schemaPath": "/notes/{id}/classification",
     "operationId": "getNotesByIdClassification",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -593,7 +593,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/classification",
     "schemaPath": "/notes/{id}/classification",
     "operationId": "postNotesByIdClassification",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -638,7 +638,7 @@ export const routes = [
     "path": "/api/v1/settings/worker",
     "schemaPath": "/settings/worker",
     "operationId": "getSettingsWorker",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -683,7 +683,7 @@ export const routes = [
     "path": "/api/v1/todos/:id/upgrade",
     "schemaPath": "/todos/{id}/upgrade",
     "operationId": "postTodosByIdUpgrade",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -728,7 +728,7 @@ export const routes = [
     "path": "/api/v1/transactions",
     "schemaPath": "/transactions",
     "operationId": "postTransactions",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -737,7 +737,7 @@ export const routes = [
     "path": "/api/v1/transactions/:id",
     "schemaPath": "/transactions/{id}",
     "operationId": "patchTransactionsById",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -863,7 +863,7 @@ export const routes = [
     "path": "/api/v1/events/:id/check",
     "schemaPath": "/events/{id}/check",
     "operationId": "postEventsByIdCheck",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -872,7 +872,7 @@ export const routes = [
     "path": "/api/v1/events/:id/checks",
     "schemaPath": "/events/{id}/checks",
     "operationId": "getEventsByIdChecks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -881,7 +881,7 @@ export const routes = [
     "path": "/api/v1/events/:id/schedule",
     "schemaPath": "/events/{id}/schedule",
     "operationId": "postEventsByIdSchedule",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -890,7 +890,7 @@ export const routes = [
     "path": "/api/v1/events/:id/snooze",
     "schemaPath": "/events/{id}/snooze",
     "operationId": "postEventsByIdSnooze",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -899,7 +899,7 @@ export const routes = [
     "path": "/api/v1/events/:id/end",
     "schemaPath": "/events/{id}/end",
     "operationId": "postEventsByIdEnd",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -908,7 +908,7 @@ export const routes = [
     "path": "/api/v1/events/:id/confirm",
     "schemaPath": "/events/{id}/confirm",
     "operationId": "postEventsByIdConfirm",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -926,7 +926,7 @@ export const routes = [
     "path": "/api/v1/computer-files",
     "schemaPath": "/computer-files",
     "operationId": "getComputerFiles",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -935,7 +935,7 @@ export const routes = [
     "path": "/api/v1/computer-files/import",
     "schemaPath": "/computer-files/import",
     "operationId": "postComputerFilesImport",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -980,7 +980,7 @@ export const routes = [
     "path": "/api/v1/search-brief",
     "schemaPath": "/search-brief",
     "operationId": "postSearchBrief",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -989,7 +989,7 @@ export const routes = [
     "path": "/api/v1/threads/:id/context",
     "schemaPath": "/threads/{id}/context",
     "operationId": "getThreadsByIdContext",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -998,7 +998,7 @@ export const routes = [
     "path": "/api/v1/threads/:id/context",
     "schemaPath": "/threads/{id}/context",
     "operationId": "postThreadsByIdContext",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1034,7 +1034,7 @@ export const routes = [
     "path": "/api/v1/conversations/:id/memory-proposals/:index",
     "schemaPath": "/conversations/{id}/memory-proposals/{index}",
     "operationId": "patchConversationsByIdMemoryProposalsByIndex",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1043,7 +1043,7 @@ export const routes = [
     "path": "/api/v1/conversations/:id/memory-review",
     "schemaPath": "/conversations/{id}/memory-review",
     "operationId": "postConversationsByIdMemoryReview",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1061,7 +1061,7 @@ export const routes = [
     "path": "/api/v1/tasks",
     "schemaPath": "/tasks",
     "operationId": "postTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1115,7 +1115,7 @@ export const routes = [
     "path": "/api/v1/memories/:id/source-review",
     "schemaPath": "/memories/{id}/source-review",
     "operationId": "getMemoriesByIdSourceReview",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1160,7 +1160,7 @@ export const routes = [
     "path": "/api/v1/settings/test",
     "schemaPath": "/settings/test",
     "operationId": "postSettingsTest",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1169,7 +1169,7 @@ export const routes = [
     "path": "/api/v1/ai/logs",
     "schemaPath": "/ai/logs",
     "operationId": "getAiLogs",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1178,7 +1178,7 @@ export const routes = [
     "path": "/api/v1/export",
     "schemaPath": "/export",
     "operationId": "getExport",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1187,7 +1187,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/transcript-history",
     "schemaPath": "/notes/{id}/transcript-history",
     "operationId": "getNotesByIdTranscriptHistory",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1196,7 +1196,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/transcription",
     "schemaPath": "/notes/{id}/transcription",
     "operationId": "getNotesByIdTranscription",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1205,7 +1205,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/transcription",
     "schemaPath": "/notes/{id}/transcription",
     "operationId": "postNotesByIdTranscription",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1214,7 +1214,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/transcript",
     "schemaPath": "/notes/{id}/transcript",
     "operationId": "patchNotesByIdTranscript",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1223,7 +1223,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/processing",
     "schemaPath": "/notes/{id}/processing",
     "operationId": "getNotesByIdProcessing",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1232,7 +1232,7 @@ export const routes = [
     "path": "/api/v1/notes/:id/processing",
     "schemaPath": "/notes/{id}/processing",
     "operationId": "postNotesByIdProcessing",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1241,7 +1241,7 @@ export const routes = [
     "path": "/api/v1/pet/reminders",
     "schemaPath": "/pet/reminders",
     "operationId": "getPetReminders",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1250,7 +1250,7 @@ export const routes = [
     "path": "/api/v1/supervision/recap",
     "schemaPath": "/supervision/recap",
     "operationId": "getSupervisionRecap",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1259,7 +1259,7 @@ export const routes = [
     "path": "/api/v1/supervision/recap",
     "schemaPath": "/supervision/recap",
     "operationId": "postSupervisionRecap",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1268,7 +1268,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/settings",
     "schemaPath": "/work-tasks/settings",
     "operationId": "getWorkTasksSettings",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1277,7 +1277,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/settings",
     "schemaPath": "/work-tasks/settings",
     "operationId": "postWorkTasksSettings",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1286,7 +1286,7 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/evidence-history",
     "schemaPath": "/work-runs/{id}/evidence-history",
     "operationId": "getWorkRunsByIdEvidenceHistory",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1295,7 +1295,7 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/evidence-history/:checkId",
     "schemaPath": "/work-runs/{id}/evidence-history/{checkId}",
     "operationId": "getWorkRunsByIdEvidenceHistoryByCheckId",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1304,7 +1304,7 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/evidence-options",
     "schemaPath": "/work-runs/{id}/evidence-options",
     "operationId": "getWorkRunsByIdEvidenceOptions",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1313,7 +1313,7 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/evidence-sources",
     "schemaPath": "/work-runs/{id}/evidence-sources",
     "operationId": "getWorkRunsByIdEvidenceSources",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1322,7 +1322,7 @@ export const routes = [
     "path": "/api/v1/work-tasks",
     "schemaPath": "/work-tasks",
     "operationId": "getWorkTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1331,7 +1331,7 @@ export const routes = [
     "path": "/api/v1/work-tasks",
     "schemaPath": "/work-tasks",
     "operationId": "postWorkTasks",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1349,7 +1349,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/:id/conditions",
     "schemaPath": "/work-tasks/{id}/conditions",
     "operationId": "postWorkTasksByIdConditions",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1358,7 +1358,7 @@ export const routes = [
     "path": "/api/v1/work-tasks/:id/action",
     "schemaPath": "/work-tasks/{id}/action",
     "operationId": "postWorkTasksByIdAction",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   },
   {
@@ -1367,7 +1367,7 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/action",
     "schemaPath": "/work-runs/{id}/action",
     "operationId": "postWorkRunsByIdAction",
-    "coverage": "legacy-owned",
+    "coverage": "reviewed",
     "transport": "json"
   }
 ];

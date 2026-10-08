@@ -6,7 +6,7 @@
 
 ## 版本与迁移
 
-- 当前 `0.1.0` 是协议抽取的首批版本，尚有 `x-field-coverage: legacy-owned` 接口待逐模块抽取；不能作为全部字段稳定的 `1.0.0` 发布。
+- 当前 `0.2.0` 已覆盖149个现行操作和3个退役操作，共155个具名Schema；业务字段允许兼容扩展。Android消费尚待独立验证，不将字段抽取完成等同于全客户端验收或稳定1.0.0。
 - 协议包遵循 SemVer，API 主路径为 `/api/v1`，OpenAPI 文档格式版本另计。后续增量抽取必须兼容现有可用调用；破坏性请求或响应变化需明确迁移版本。
 - 每个 operation 的 `x-legacy-path` 是唯一旧路径映射；`/api/mobile/v1/session` 对应 `/api/v1/devices/session`，不能与网页 Cookie 会话混淆。
 - `reviewed` 表示字段已抽取；`legacy-owned` 表示路由已盘点、字段仍由业务模块校验；`retired` 为已有 410 入口。不把无结构的 `{}` 当作已完成字段抽取。

@@ -157,7 +157,11 @@ export interface paths {
          */
         get: operations["getThreads"];
         put?: never;
-        post?: never;
+        /**
+         * POST /threads
+         * @description Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.
+         */
+        post: operations["postThreads"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2659,6 +2663,50 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/threads/{id}/web-policy": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * GET /threads/{id}/web-policy
+         * @description Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.
+         */
+        get: operations["getThreadsByIdWebPolicy"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /**
+         * PATCH /threads/{id}/web-policy
+         * @description Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.
+         */
+        patch: operations["patchThreadsByIdWebPolicy"];
+        trace?: never;
+    };
+    "/chat-runs/{id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * GET /chat-runs/{id}
+         * @description Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.
+         */
+        get: operations["getChatRunsById"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -2919,6 +2967,7 @@ export interface components {
             memoryProposals?: components["schemas"]["MemoryProposal"][];
             memoryNotice?: string;
             memoryReview?: "pending" | "none" | "reviewed" | "expired";
+            agentRun?: components["schemas"]["ChatRun"];
         };
         Task: {
             id: string;
@@ -3074,7 +3123,7 @@ export interface components {
         };
         SourceThreadRequest: {
             /** @enum {string} */
-            kind: "note" | "event";
+            kind: "note" | "event" | "libraryFile";
             id: string;
         };
         SourceThread: {
@@ -3096,6 +3145,7 @@ export interface components {
                 revision?: number;
             }[];
             opId?: string;
+            continueRunId?: string;
         };
         EmptyRequest: Record<string, never>;
         NameRequest: {
@@ -4916,6 +4966,36 @@ export interface components {
                 at: string;
             }[];
         };
+        ChatWebPolicy: {
+            webSearch: boolean;
+            revision: number;
+        };
+        ChatThreadRequest: {
+            /** Format: uuid */
+            id: string;
+        };
+        ChatThreadCreated: {
+            threadId: string;
+        };
+        ChatRun: {
+            id: string;
+            threadId: string;
+            /** @enum {string} */
+            status: "running" | "completed" | "stopped";
+            phase: string;
+            notice: string;
+            calls: number;
+            costMicros: number;
+            elapsedMs: number;
+            totalCalls: number;
+            totalCostMicros: number;
+            canContinue: boolean;
+            steps: {
+                at: string;
+                text: string;
+                notice?: string;
+            }[];
+        };
     };
     responses: never;
     parameters: never;
@@ -5251,6 +5331,43 @@ export interface operations {
                 };
             };
             /** @description Original HTTP error status; state conflicts may include current. */
+            default: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Error"];
+                };
+            };
+        };
+    };
+    postThreads: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ChatThreadRequest"];
+            };
+        };
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ChatThreadCreated"];
+                };
+            };
+            /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
                     /** @description Present on versioned routes; legacy routes preserve original headers. */
@@ -10841,6 +10958,115 @@ export interface operations {
                 };
             };
             /** @description Original HTTP error status; state conflicts may include current. */
+            default: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Error"];
+                };
+            };
+        };
+    };
+    getThreadsByIdWebPolicy: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ChatWebPolicy"];
+                };
+            };
+            /** @description Existing error envelope and HTTP status preserved. */
+            default: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Error"];
+                };
+            };
+        };
+    };
+    patchThreadsByIdWebPolicy: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ChatWebPolicy"];
+            };
+        };
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ChatWebPolicy"];
+                };
+            };
+            /** @description Existing error envelope and HTTP status preserved. */
+            default: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Error"];
+                };
+            };
+        };
+    };
+    getChatRunsById: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Success */
+            200: {
+                headers: {
+                    /** @description Present on versioned routes; legacy routes preserve original headers. */
+                    "X-Contract-Version"?: string;
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ChatRun"];
+                };
+            };
+            /** @description Existing error envelope and HTTP status preserved. */
             default: {
                 headers: {
                     /** @description Present on versioned routes; legacy routes preserve original headers. */

@@ -1,6 +1,6 @@
 // Generated from openapi.json. Do not edit.
 export const API_BASE = "/api/v1";
-export const CONTRACT_VERSION = "0.2.0";
+export const CONTRACT_VERSION = "0.3.0";
 export const routes = [
   {
     "method": "GET",
@@ -80,6 +80,15 @@ export const routes = [
     "path": "/api/v1/threads",
     "schemaPath": "/threads",
     "operationId": "getThreads",
+    "coverage": "reviewed",
+    "transport": "json"
+  },
+  {
+    "method": "POST",
+    "legacy": "/api/threads",
+    "path": "/api/v1/threads",
+    "schemaPath": "/threads",
+    "operationId": "postThreads",
     "coverage": "reviewed",
     "transport": "json"
   },
@@ -1367,6 +1376,33 @@ export const routes = [
     "path": "/api/v1/work-runs/:id/action",
     "schemaPath": "/work-runs/{id}/action",
     "operationId": "postWorkRunsByIdAction",
+    "coverage": "reviewed",
+    "transport": "json"
+  },
+  {
+    "method": "GET",
+    "legacy": "/api/threads/:id/web-policy",
+    "path": "/api/v1/threads/:id/web-policy",
+    "schemaPath": "/threads/{id}/web-policy",
+    "operationId": "getThreadsByIdWebPolicy",
+    "coverage": "reviewed",
+    "transport": "json"
+  },
+  {
+    "method": "PATCH",
+    "legacy": "/api/threads/:id/web-policy",
+    "path": "/api/v1/threads/:id/web-policy",
+    "schemaPath": "/threads/{id}/web-policy",
+    "operationId": "patchThreadsByIdWebPolicy",
+    "coverage": "reviewed",
+    "transport": "json"
+  },
+  {
+    "method": "GET",
+    "legacy": "/api/chat-runs/:id",
+    "path": "/api/v1/chat-runs/:id",
+    "schemaPath": "/chat-runs/{id}",
+    "operationId": "getChatRunsById",
     "coverage": "reviewed",
     "transport": "json"
   }

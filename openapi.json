@@ -2,7 +2,7 @@
   "openapi": "3.1.1",
   "info": {
     "title": "Xiaojiu HTTP contracts",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Shared wire shapes for all 149 live HTTP operations plus 3 retired routes. Business state, normalization, authorization and idempotency remain server-owned. Responses allow additive fields and are never blocked after writes."
   },
   "servers": [
@@ -633,6 +633,65 @@
                   "type": "string"
                 },
                 "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          }
+        },
+        "x-parameter-validation": "wire-shape-and-domain",
+        "x-response-validation": "diagnostic"
+      },
+      "post": {
+        "operationId": "postThreads",
+        "summary": "POST /threads",
+        "x-legacy-path": "/api/threads",
+        "x-handler": "server/agent/chat-policy.mjs",
+        "x-field-coverage": "reviewed",
+        "description": "Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatThreadCreated"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          },
+          "default": {
+            "description": "Existing error envelope and HTTP status preserved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatThreadRequest"
               }
             }
           }
@@ -11437,6 +11496,194 @@
         "x-parameter-validation": "wire-shape-and-domain",
         "x-response-validation": "diagnostic"
       }
+    },
+    "/threads/{id}/web-policy": {
+      "get": {
+        "operationId": "getThreadsByIdWebPolicy",
+        "summary": "GET /threads/{id}/web-policy",
+        "x-legacy-path": "/api/threads/:id/web-policy",
+        "x-handler": "server/agent/chat-policy.mjs",
+        "x-field-coverage": "reviewed",
+        "description": "Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatWebPolicy"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          },
+          "default": {
+            "description": "Existing error envelope and HTTP status preserved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          }
+        },
+        "x-parameter-validation": "wire-shape-and-domain",
+        "x-response-validation": "diagnostic"
+      },
+      "patch": {
+        "operationId": "patchThreadsByIdWebPolicy",
+        "summary": "PATCH /threads/{id}/web-policy",
+        "x-legacy-path": "/api/threads/:id/web-policy",
+        "x-handler": "server/agent/chat-policy.mjs",
+        "x-field-coverage": "reviewed",
+        "description": "Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatWebPolicy"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          },
+          "default": {
+            "description": "Existing error envelope and HTTP status preserved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatWebPolicy"
+              }
+            }
+          }
+        },
+        "x-parameter-validation": "wire-shape-and-domain",
+        "x-response-validation": "diagnostic"
+      }
+    },
+    "/chat-runs/{id}": {
+      "get": {
+        "operationId": "getChatRunsById",
+        "summary": "GET /chat-runs/{id}",
+        "x-legacy-path": "/api/chat-runs/:id",
+        "x-handler": "server/agent/chat-policy.mjs",
+        "x-field-coverage": "reviewed",
+        "description": "Wire shape shared with consumers. State-dependent business checks and normalization remain server-owned.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatRun"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          },
+          "default": {
+            "description": "Existing error envelope and HTTP status preserved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "X-Contract-Version": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Present on versioned routes; legacy routes preserve original headers."
+              }
+            }
+          }
+        },
+        "x-parameter-validation": "wire-shape-and-domain",
+        "x-response-validation": "diagnostic"
+      }
     }
   },
   "components": {
@@ -12762,6 +13009,9 @@
                 "const": "expired"
               }
             ]
+          },
+          "agentRun": {
+            "$ref": "#/components/schemas/ChatRun"
           }
         },
         "required": [
@@ -13513,7 +13763,8 @@
             "type": "string",
             "enum": [
               "note",
-              "event"
+              "event",
+              "libraryFile"
             ]
           },
           "id": {
@@ -13598,6 +13849,11 @@
             "type": "string",
             "maxLength": 100,
             "minLength": 8
+          },
+          "continueRunId": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 100
           }
         },
         "required": [
@@ -22019,6 +22275,133 @@
           "status",
           "createdAt"
         ]
+      },
+      "ChatWebPolicy": {
+        "type": "object",
+        "properties": {
+          "webSearch": {
+            "type": "boolean"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "webSearch",
+          "revision"
+        ],
+        "additionalProperties": false
+      },
+      "ChatThreadRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      },
+      "ChatThreadCreated": {
+        "type": "object",
+        "properties": {
+          "threadId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "threadId"
+        ],
+        "additionalProperties": false
+      },
+      "ChatRun": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "threadId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "running",
+              "completed",
+              "stopped"
+            ]
+          },
+          "phase": {
+            "type": "string"
+          },
+          "notice": {
+            "type": "string"
+          },
+          "calls": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "costMicros": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "elapsedMs": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "totalCalls": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "totalCostMicros": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "canContinue": {
+            "type": "boolean"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "at": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "notice": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "at",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "threadId",
+          "status",
+          "phase",
+          "notice",
+          "calls",
+          "costMicros",
+          "elapsedMs",
+          "totalCalls",
+          "totalCostMicros",
+          "canContinue",
+          "steps"
+        ],
+        "additionalProperties": false
       }
     }
   }
